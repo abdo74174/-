@@ -770,6 +770,115 @@
   .hero-actions{flex-direction:column;width:100%}
   .hero-actions .btn{width:100%}
 }
+    /* ── FAQ SECTION ── */
+    .faq-section {
+      background: #fdfdfd;
+      padding: 80px 0;
+      position: relative;
+    }
+    .faq-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .faq-title-box {
+      display: inline-block;
+      background: var(--primary-dark);
+      color: #fff;
+      padding: 12px 40px;
+      border-radius: 12px;
+      font-size: 28px;
+      font-weight: 800;
+      margin-top: 20px;
+      box-shadow: 0 4px 15px rgba(26, 79, 138, 0.2);
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .faq-card {
+      background: #fff;
+      border: 1px solid #edf2f7;
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      gap: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      position: relative;
+    }
+    .faq-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(26, 79, 138, 0.08);
+      border-color: var(--primary-light);
+    }
+    .faq-num {
+      width: 40px;
+      height: 40px;
+      background: var(--bg);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--primary);
+      flex-shrink: 0;
+      font-size: 18px;
+    }
+    .faq-content h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text1);
+    }
+    .faq-content p {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.7;
+    }
+    .faq-icon-box {
+      margin-right: auto;
+      width: 60px;
+      height: 60px;
+      background: #f8fafc;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .faq-icon-box img {
+      max-width: 40px;
+      max-height: 40px;
+    }
+
+    .faq-footer-banner {
+      background: #0f3360;
+      border-radius: 16px;
+      padding: 30px;
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .faq-footer-banner h4 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    
+    @media(max-width: 768px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .faq-card {
+        padding: 20px;
+      }
+    }
 </style>
 </head>
 
@@ -1083,6 +1192,209 @@
     </div>
   </section>
 
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="faq-section">
+    <div class="container">
+      <div class="faq-header">
+        <img src="assets/images/logo.png" alt="Logo" style="height: 60px; margin-bottom: 10px;">
+        <div style="font-size: 16px; color: var(--gold); font-weight: 700;">منصة استثمار عقاري ذكية وآمنة</div>
+        <div class="faq-title-box">الأسئلة الشائعة للمستثمر</div>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 40px; margin-bottom: 50px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <div style="width: 50px; height: 50px; background: #f0f4f8; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">
+            💰
+          </div>
+          <div style="font-weight: 700; font-size: 14px;">رسوم بسيطة جداً</div>
+          <div style="font-size: 11px; color: #777;">شفافة وواضحة لا تؤثر على عائدك</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 50px; height: 50px; background: #fff8eb; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">
+            📈
+          </div>
+          <div style="font-weight: 700; font-size: 14px;">عوائد تنافسية</div>
+          <div style="font-size: 11px; color: #777;">من 8% إلى 15% سنوياً</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 50px; height: 50px; background: #eefdf5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px;">
+            🛡️
+          </div>
+          <div style="font-weight: 700; font-size: 14px;">حماية أموالك أولويتنا</div>
+          <div style="font-size: 11px; color: #777;">صرف مرحلي + تحقق + رهن الأرض</div>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <!-- 01 -->
+        <div class="faq-card">
+          <div class="faq-num">01</div>
+          <div class="faq-content">
+            <h3>كيف تعمل منصة بنيان؟</h3>
+            <p>تمكنك بنيان من الاستثمار في مشاريع عقارية عبر تمويل مرحلي، حيث يتم صرف الأموال للمطور تدريجياً بعد التحقق من إنجاز كل مرحلة.</p>
+          </div>
+          <div class="faq-icon-box">
+             <img src="https://cdn-icons-png.flaticon.com/512/1063/1063376.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="faq-card">
+          <div class="faq-num">02</div>
+          <div class="faq-content">
+            <h3>كيف يتم حماية أموالي؟</h3>
+            <p>نعتمد على ثلاث طبقات حماية:<br>• صرف مرحلي حسب الإنجاز<br>• التحقق من تقدم المشروع قبل الصرف<br>• رهن أرض المشروع كضمان للمستثمرين</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1162/1162456.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="faq-card">
+          <div class="faq-num">03</div>
+          <div class="faq-content">
+            <h3>ماذا يعني رهن الأرض؟</h3>
+            <p>رهن الارض لصالح المنصة وهي تقوم بدورها بمراقبة المشروع لكل مرحلة</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2667/2667104.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="faq-card">
+          <div class="faq-num">04</div>
+          <div class="faq-content">
+            <h3>ما هو العائد المتوقع؟</h3>
+            <p>يتراوح العائد المتوقع عادة بين 8% إلى 15% سنوياً حسب نوع المشروع ومستوى المخاطر.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="faq-card">
+          <div class="faq-num">05</div>
+          <div class="faq-content">
+            <h3>متى أستلم أرباحي؟</h3>
+            <p>تختلف حسب المشروع، إما عند اكتمال المشروع أو وفق جدول توزيعات محدد يتم توضيحه مسبقاً.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2682/2682065.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="faq-card">
+          <div class="faq-num">06</div>
+          <div class="faq-content">
+            <h3>هل يمكن الخروج قبل نهاية المشروع؟</h3>
+            <p>بعض المشاريع تتيح خيارات خروج مبكر، وسيتم توضيح ذلك ضمن تفاصيل كل مشروع قبل الاستثمار.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/3580/3580148.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 07 -->
+        <div class="faq-card">
+          <div class="faq-num">07</div>
+          <div class="faq-content">
+            <h3>من يتحقق من تقدم المشروع؟</h3>
+            <p>يتم التحقق من تقدم المشروع من خلال تقارير فنية وجهات مختصة، ولا يتم صرف أي دفعة إلا بعد التأكد من تنفيذ المرحلة.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 08 -->
+        <div class="faq-card">
+          <div class="faq-num">08</div>
+          <div class="faq-content">
+            <h3>هل توجد رسوم؟</h3>
+            <p>نعم، توجد رسوم بسيطة جداً ومحدودة، يتم توضيحها بشكل كامل قبل تنفيذ أي استثمار.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2534/2534185.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 09 -->
+        <div class="faq-card">
+          <div class="faq-num">09</div>
+          <div class="faq-content">
+            <h3>كيف تربح المنصة؟</h3>
+            <p>تعتمد بنيان على رسوم تشغيل وإدارة بسيطة على الاستثمارات والمطورين، بدون أي تكاليف مخفية، وبشفافية كاملة.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2454/2454282.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="faq-card">
+          <div class="faq-num">10</div>
+          <div class="faq-content">
+            <h3>كيف أبدأ الاستثمار؟</h3>
+            <p>1. إنشاء حساب<br>2. تصفح المشاريع المتاحة<br>3. اختيار المشروع المناسب<br>4. تحديد مبلغ الاستثمار<br>5. تأكيد العملية</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="faq-card">
+          <div class="faq-num">11</div>
+          <div class="faq-content">
+            <h3>لماذا تركز بنيان على المطورين الصغار والمتوسطين؟</h3>
+            <p>يوجد فجوة تمويلية في السوق، حيث يواجه المطورون الصغار والمتوسطون صعوبة في الحصول على التمويل من الجهات التقليدية رغم وجود مشاريع واعدة. بنيان تسد هذه الفجوة عبر ربطهم بالمستثمرين وتوفير تمويل منظم وتقليل المخاطر.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1162/1162499.png" alt="icon">
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="faq-card">
+          <div class="faq-num">12</div>
+          <div class="faq-content">
+            <h3>كيف تستفيد كمستثمر من هذه الفجوة؟</h3>
+            <p>تتيح هذه الفجوة فرص استثمارية بعوائد أعلى نسبياً ودخول مبكر في مشاريع واعدة لم تحصل على تمويل كافٍ من القنوات التقليدية، مع حماية عالية عبر: رهن الأرض، الصرف المرحلي، التحقق قبل الصرف.</p>
+          </div>
+          <div class="faq-icon-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2454/2454297.png" alt="icon">
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-footer-banner">
+        <div style="background: #fff; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #0f3360; font-size: 20px;">
+          ✓
+        </div>
+        <h4>لا يتم صرف أي مبلغ للمطور إلا بعد التحقق من إنجاز المرحلة، مع وجود رهن على أصل المشروع (الأرض) لحماية المستثمر.</h4>
+      </div>
+      
+      <div style="display: flex; justify-content: center; gap: 30px; margin-top: 30px; flex-wrap: wrap;">
+         <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #666;">
+           <span>🤝</span> فرص استثمارية حقيقية
+         </div>
+         <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #666;">
+           <span>🛡️</span> حماية قوية لأموالك
+         </div>
+         <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #666;">
+           <span>📊</span> عوائد تنافسية
+         </div>
+         <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #666;">
+           <span>💰</span> رسوم بسيطة وشفافة
+         </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
@@ -1105,7 +1417,7 @@
         </div>
         <div>
           <div class="footer-col-ttl">المستثمر</div>
-          <div class="footer-links"><a href="page5-dashboard.html">لوحة التحكم</a><a>سؤال وجواب</a><a>الدعم</a></div>
+          <div class="footer-links"><a href="page5-dashboard.html">لوحة التحكم</a><a href="#faq-section">سؤال وجواب</a><a>الدعم</a></div>
         </div>
         <div>
           <div class="footer-col-ttl">قانوني</div>
