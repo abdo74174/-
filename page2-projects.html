@@ -38,7 +38,7 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text1);font
 .mobile-menu-actions{display:flex;flex-direction:column;gap:10px;margin-top:8px}
 .mobile-menu-actions .btn{width:100%;justify-content:center;text-decoration:none}
 .mobile-overlay{display:none;position:fixed;inset:0;background:rgba(15,31,53,.4);z-index:290;opacity:0;transition:opacity .3s ease}
-.mobile-overlay.open{opacity:1}
+.mobile-overlay.open{display:block;opacity:1}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 22px;border-radius:var(--r);font-size:14px;font-weight:700;cursor:pointer;border:none;transition:all .2s;line-height:1;font-family:'Cairo',sans-serif}
 .btn-primary{background:var(--primary);color:#fff}
 .btn-primary:hover{background:var(--primary-dark)}
@@ -89,7 +89,7 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text1);font
   .nav-actions-desktop{display:none !important}
   .hamburger{display:flex}
   .mobile-menu{display:flex}
-  .mobile-overlay{display:block}
+  .mobile-overlay{/* Removed display:block */}
   .grid-3{grid-template-columns:1fr 1fr}
   .filters{padding:12px;gap:10px}
 }

@@ -47,7 +47,7 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text1);font
 .mobile-menu-actions{display:flex;flex-direction:column;gap:10px;margin-top:8px}
 .mobile-menu-actions .btn{width:100%;justify-content:center;text-decoration:none}
 .mobile-overlay{display:none;position:fixed;inset:0;background:rgba(15,31,53,.4);z-index:290;opacity:0;transition:opacity .3s ease}
-.mobile-overlay.open{opacity:1}
+.mobile-overlay.open{display:block;opacity:1}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 .section-sm{padding:48px 0}
 /* Dashboard Header */
@@ -82,7 +82,7 @@ tbody td{padding:14px 16px;font-size:14px;vertical-align:middle}
   .nav-actions-desktop{display:none !important}
   .hamburger{display:flex}
   .mobile-menu{display:flex}
-  .mobile-overlay{display:block}
+  .mobile-overlay{/* Removed display:block */}
   .dash-kpis{grid-template-columns:1fr 1fr}
   .dash-name{font-size:22px}
 }
