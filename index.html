@@ -1,0 +1,408 @@
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+                font-family: "Source Sans 3", sans-serif;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { theme: { extend: { "colors": { "background": "#f8f9ff", "surface-tint": "#465f88", "surface-container-high": "#dce9ff", "primary-fixed": "#d6e3ff", "surface-bright": "#f8f9ff", "tertiary-fixed": "#ffdbcb", "on-secondary-container": "#006e6e", "inverse-on-surface": "#eaf1ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#b97958", "secondary": "#006a6a", "secondary-fixed": "#93f2f2", "secondary-fixed-dim": "#76d6d5", "on-primary-fixed": "#001b3d", "surface-variant": "#d3e4fe", "inverse-surface": "#213145", "outline": "#74777f", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#004f4f", "secondary-container": "#90efef", "primary-fixed-dim": "#aec7f6", "tertiary-container": "#3d1500", "surface": "#f8f9ff", "error": "#ba1a1a", "on-background": "#0b1c30", "inverse-primary": "#aec7f6", "surface-dim": "#cbdbf5", "on-primary-container": "#708ab5", "surface-container": "#e5eeff", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-secondary-fixed": "#002020", "on-surface-variant": "#44474e", "primary-container": "#002147", "on-tertiary-fixed": "#341100", "on-error": "#ffffff", "outline-variant": "#c4c6cf", "on-tertiary-fixed-variant": "#6c391d", "primary": "#000a1e", "on-primary-fixed-variant": "#2d476f", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "tertiary": "#180500", "tertiary-fixed-dim": "#ffb691", "surface-container-low": "#eff4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "16px", "xl": "80px", "lg": "48px", "sm": "12px", "base": "8px", "xs": "4px", "margin-desktop": "64px", "gutter": "24px", "md": "24px" }, "fontFamily": { "headline-lg": ["\"Source Serif 4\""], "display-lg": ["\"Source Serif 4\""], "headline-md": ["\"Source Serif 4\""], "body-lg": ["\"Source Sans 3\""], "label-md": ["\"Source Sans 3\""], "body-md": ["\"Source Sans 3\""], "headline-lg-mobile": ["\"Source Serif 4\""] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface">
+    <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,33,71,0.05)]">
+        <div
+            class="h-20 max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-14 h-14 flex items-center justify-center bg-[#F3EFE4] p-1 rounded-sm">
+                    <img alt="Cairo University Logo" class="w-full h-full object-contain mix-blend-multiply"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmcLqPZYN-Jv-0ohQJcpRuBD2sTH1cAJRHGj9jsPIAVlzf7m8Eg4HsIyuuTv3gEz7S3z5Np4fyheTkwPdZvekQWylDsrNy55sKnOuecT1nqUHPw8a0Qmpic4icokHA1Uup3J8D_FrfwqtvTyw8Xp-ZzxU0gyAXX8sYBirHzY6LPzg-7Qj9rxfsi6WlWEqvuenWhh4Cg2YzSekS1JRqHN_sl7taTuH5bKF30UgT_v33F9cvO3LWtFHM" />
+                </div>
+                <div class="w-0.5 h-12 bg-primary"></div>
+                <div class="flex flex-col pr-1 text-right">
+                    <span class="text-[22px] font-bold text-primary leading-tight tracking-wide" style="font-family: 'Source Serif 4', serif;">كلية العلاج الطبيعي</span>
+                    <span class="text-[13px] font-bold text-[#708ab5] leading-tight mt-0.5">جامعة القاهرة - قصر العيني</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-md"
+                data-active-classes="text-primary font-bold border-b-2 border-primary"><a aria-current="page"
+                    class="transition-colors py-2 text-primary font-bold border-b-2 border-primary" data-path="home"
+                    href="index.html">الرئيسية</a><a
+                    class="text-body-md text-on-surface-variant hover:text-primary transition-colors py-2"
+                    data-path="register" href="register.html">التسجيل</a><a
+                    class="text-body-md text-on-surface-variant hover:text-primary transition-colors py-2"
+                    data-path="login" href="login.html">دخول</a></nav>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[20px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20">
+        <div class="flex flex-col w-full overflow-hidden">
+            <!-- Hero Section -->
+            <section
+                class="relative min-h-[85vh] flex items-center justify-center px-margin-mobile lg:px-margin-desktop overflow-hidden">
+                <!-- Background Decor -->
+                <div
+                    class="absolute inset-0 z-0 bg-gradient-to-bl from-surface-container-low via-background to-surface-container-high/30">
+                </div>
+                <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none z-0">
+                    <svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+                        <pattern height="10" id="grid" patternunits="userSpaceOnUse" width="10">
+                            <path class="text-primary" d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor"
+                                stroke-width="0.1"></path>
+                        </pattern>
+                        <rect fill="url(#grid)" height="100" width="100"></rect>
+                    </svg>
+                </div>
+                <!-- Living Background Asset -->
+                <div
+                    class="absolute -right-20 top-20 w-[600px] h-[600px] blur-[120px] bg-primary-fixed/20 rounded-full animate-pulse">
+                </div>
+                <div
+                    class="absolute -left-20 bottom-20 w-[400px] h-[400px] blur-[100px] bg-secondary-container/30 rounded-full">
+                </div>
+                <div class="relative z-10 max-w-[1140px] w-full grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+                    <div class="flex flex-col gap-lg text-right">
+                        <div
+                            class="inline-flex items-center gap-xs bg-surface-container px-base py-1 rounded-full w-fit">
+                            <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                            <span class="text-label-md font-label-md text-secondary tracking-widest uppercase">التسجيل
+                                مفتوح الآن</span>
+                        </div>
+                        <h1 class="text-display-lg font-display-lg text-primary leading-[1.1] max-w-[600px]">
+                            نظام إدارة امتياز <span class="text-secondary">العلاج الطبيعي</span> - القصر العيني
+                        </h1>
+                        <p class="text-body-lg font-body-lg text-on-surface-variant max-w-[500px]">
+                            منصة إلكترونية متطورة لتنظيم وتوزيع طلبة الامتياز على الأقسام المختلفة بكلية العلاج الطبيعي
+                            جامعة القاهرة، تضمن الكفاءة والشفافية التامة.
+                        </p>
+                        <div class="flex flex-wrap gap-md mt-sm">
+                            <a class="group relative px-lg py-md bg-primary text-on-primary rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+                                href="register.html">
+                                <div
+                                    class="absolute inset-0 bg-secondary translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                </div>
+                                <span class="relative z-10 font-label-md text-headline-md">سجل الآن</span>
+                            </a>
+                            <a class="px-lg py-md bg-white border border-outline-variant text-primary rounded-xl font-label-md text-headline-md hover:bg-surface-container transition-colors shadow-sm"
+                                href="login.html">
+                                تسجيل الدخول
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-3 gap-md mt-lg border-r-4 border-secondary pr-6 py-2">
+                            <div class="flex flex-col">
+                                <span class="text-headline-lg font-headline-lg text-primary counter"
+                                    data-target="1200">0</span>
+                                <span class="text-label-md font-label-md text-on-surface-variant opacity-70">طالب
+                                    سنوي</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-headline-lg font-headline-lg text-primary counter"
+                                    data-target="12">0</span>
+                                <span class="text-label-md font-label-md text-on-surface-variant opacity-70">قسم
+                                    تخصصي</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-headline-lg font-headline-lg text-primary counter"
+                                    data-target="100">0</span>
+                                <span class="text-label-md font-label-md text-on-surface-variant opacity-70">%
+                                    رقمي</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <div
+                            class="relative z-10 w-full aspect-square rounded-[40px] overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-700 group">
+                            <img class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000"
+                                data-alt="A professional aerial view of Cairo University's historic architecture, specifically the Kasr Al-Ainy Faculty of Physical Therapy, with modern glass elements reflecting a clear blue sky. Professional lighting, crisp medical environment vibe, academic prestige aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuPFSYksMr736Rr_IfADcBv2G6zNiTR5wCdhKHGN-mGS7jia_DeJxcvvrdtWd9I_TE6E3JyAneMkXIGsPoeWjuF85Ems7wi8RluejWwD95Ua6d3lDUoo69boAMED_pTETCCMVn7cyUzc1JsCGXuc6vRh6XihiTeEOrXXAS8qlvBt63GKQ2DNy2bMCIpXHxZN6Ptj74YP12BMWEgKN1msJMZooFqabu0rfw0UVUoKyaEFE9WRdUyo9g" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+                            <div
+                                class="absolute bottom-8 right-8 left-8 p-md bg-white/10 backdrop-blur-md rounded-xl border border-white/20">
+                                <p class="text-on-primary font-body-md text-center italic">"الريادة في تعليم العلاج
+                                    الطبيعي على مستوى الشرق الأوسط"</p>
+                            </div>
+                        </div>
+                        <!-- Floating Elements -->
+                        <div
+                            class="absolute -top-12 -left-12 w-32 h-32 bg-secondary-container rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                            <span class="material-symbols-outlined text-secondary text-[48px]">clinical_notes</span>
+                        </div>
+                        <div
+                            class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-fixed rounded-2xl flex flex-col items-center justify-center shadow-xl p-md">
+                            <span class="material-symbols-outlined text-primary text-[40px] mb-2">verified_user</span>
+                            <span class="text-label-md font-label-md text-primary text-center">نظام معتمد ومؤمن</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features Grid -->
+            <section class="py-xl px-margin-mobile lg:px-margin-desktop bg-surface-container-lowest">
+                <div class="max-w-[1140px] mx-auto">
+                    <div class="flex flex-col items-center text-center mb-xl">
+                        <h2 class="text-headline-lg font-headline-lg text-primary mb-base">مميزات المنصة الذكية</h2>
+                        <div class="w-24 h-1 bg-secondary rounded-full"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                        <!-- Feature 1 -->
+                        <div
+                            class="group p-lg bg-white rounded-[32px] hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-secondary/10 flex flex-col items-start text-right">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
+                                <span
+                                    class="material-symbols-outlined text-on-secondary-container text-[32px]">balance</span>
+                            </div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-sm">توزيع عادل</h3>
+                            <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                يعتمد النظام مبدأ الأولوية حسب تاريخ التسجيل، مما يضمن الشفافية المطلقة والعدالة بين
+                                جميع الطلاب المتقدمين للأقسام.
+                            </p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div
+                            class="group p-lg bg-white rounded-[32px] shadow-sm hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-primary/10 flex flex-col items-start text-right">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-primary-fixed flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
+                                <span
+                                    class="material-symbols-outlined text-on-primary-fixed text-[32px]">insights</span>
+                            </div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-sm">إدارة ذكية</h3>
+                            <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                لوحة تحكم متكاملة تتيح متابعة الأعداد المتاحة والمشغولة في كل قسم لحظة بلحظة مع تقارير
+                                إحصائية دقيقة لمتخذي القرار.
+                            </p>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div
+                            class="group p-lg bg-white rounded-[32px] shadow-sm hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-tertiary/10 flex flex-col items-start text-right">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-tertiary-fixed flex items-center justify-center mb-md group-hover:scale-110 transition-transform duration-300">
+                                <span
+                                    class="material-symbols-outlined text-on-tertiary-fixed text-[32px]">cloud_upload</span>
+                            </div>
+                            <h3 class="text-headline-md font-headline-md text-primary mb-sm">سهولة الوصول</h3>
+                            <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                ارفع مستنداتك وإيصالات الدفع وتابع حالة تفعيل حسابك إلكترونياً بالكامل دون الحاجة للحضور
+                                الشخصي المتكرر.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Interactive Section: Department Preview -->
+            <section class="py-xl px-margin-mobile lg:px-margin-desktop relative overflow-hidden">
+                <div class="max-w-[1140px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+                    <div class="order-2 lg:order-1 flex flex-col gap-md">
+                        <div
+                            class="p-md bg-white rounded-2xl shadow-md flex items-center gap-md border-r-4 border-secondary">
+                            <div
+                                class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined">radiology</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-headline-md font-headline-md text-primary">العلاج الطبيعي للأعصاب</h4>
+                                <div class="w-full h-2 bg-surface-container rounded-full mt-2 overflow-hidden">
+                                    <div class="w-[85%] h-full bg-secondary"></div>
+                                </div>
+                            </div>
+                            <span class="text-label-md font-label-md text-secondary">85% ممتلئ</span>
+                        </div>
+                        <div
+                            class="p-md bg-white rounded-2xl shadow-md flex items-center gap-md border-r-4 border-primary translate-x-8">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">cardiology</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-headline-md font-headline-md text-primary">أمراض الباطنة والمسنين</h4>
+                                <div class="w-full h-2 bg-surface-container rounded-full mt-2 overflow-hidden">
+                                    <div class="w-[40%] h-full bg-primary"></div>
+                                </div>
+                            </div>
+                            <span class="text-label-md font-label-md text-primary">40% ممتلئ</span>
+                        </div>
+                        <div
+                            class="p-md bg-white rounded-2xl shadow-md flex items-center gap-md border-r-4 border-tertiary-fixed-dim">
+                            <div
+                                class="w-12 h-12 bg-tertiary-fixed/30 rounded-full flex items-center justify-center text-on-tertiary-fixed-variant">
+                                <span class="material-symbols-outlined">accessibility_new</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-headline-md font-headline-md text-primary">إصابات الملاعب والعظام</h4>
+                                <div class="w-full h-2 bg-surface-container rounded-full mt-2 overflow-hidden">
+                                    <div class="w-[95%] h-full bg-error"></div>
+                                </div>
+                            </div>
+                            <span class="text-label-md font-label-md text-error">مكتمل تقريباً</span>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 text-right">
+                        <h2 class="text-headline-lg font-headline-lg text-primary mb-md">تحديثات فورية للسعة الاستيعابية
+                        </h2>
+                        <p class="text-body-lg font-body-lg text-on-surface-variant mb-lg">
+                            تمتع برؤية واضحة للأماكن المتاحة في كل تخصص قبل البدء في عملية التسجيل، مما يساعدك على اتخاذ
+                            القرار الصحيح في الوقت المناسب.
+                        </p>
+                        <ul class="flex flex-col gap-sm">
+                            <li class="flex items-center gap-xs text-body-md">
+                                <span class="material-symbols-outlined text-secondary">check_circle</span>
+                                تحديث لحظي لقواعد البيانات
+                            </li>
+                            <li class="flex items-center gap-xs text-body-md">
+                                <span class="material-symbols-outlined text-secondary">check_circle</span>
+                                تنبيهات فورية عند تغيير حالة الطلب
+                            </li>
+                            <li class="flex items-center gap-xs text-body-md">
+                                <span class="material-symbols-outlined text-secondary">check_circle</span>
+                                نظام مفاضلة آلي متطور
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- CTA Banner -->
+            <section class="my-xl mx-margin-mobile lg:mx-margin-desktop">
+                <div
+                    class="relative max-w-[1140px] mx-auto bg-primary rounded-[40px] p-lg lg:p-xl overflow-hidden text-center flex flex-col items-center gap-md">
+                    <div class="absolute inset-0 opacity-10">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Microscopic pattern of muscle fibers and neural pathways, abstract medical visualization with dark navy and teal lighting, high-end scientific aesthetic."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKKxJcgIUt8Kq5lAcNi8dsQY68EaEcPZZoDRLaM8N2wYbSQ7tx3TWG9kKuNR2p2topgizmn-s0hZe1YJIYiPAbQDjnPL85aR_c1JZAvEDLOjxRzCoTC1xERuNwW5-lCOfXMURItn8Sr_StKQ4SPeSJMMO-rrF0wQ44Fvu4gn-ebm7e4rZ8d39nEdMdTaM6-Ib4g-Hjttut5j0IEZMl7pBhX9QPXoEkf_sBIW8J_WLdMYHRrhtDOSl4" />
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center gap-md">
+                        <h2 class="text-headline-lg font-headline-lg text-on-primary">جاهز لبدء رحلة الامتياز؟</h2>
+                        <p class="text-body-lg font-body-lg text-on-primary/80 max-w-[600px]">
+                            انضم الآن لمئات الطلاب الذين أتموا عملية توزيعهم بنجاح عبر منصتنا الرقمية. ابدأ خطواتك
+                            المهنية الأولى مع قصر العيني.
+                        </p>
+                        <div class="flex gap-md mt-sm">
+                            <button
+                                class="px-xl py-md bg-secondary text-on-secondary font-headline-md rounded-xl hover:scale-105 transition-transform">أنشئ
+                                حسابك الآن</button>
+                            <button
+                                class="px-xl py-md bg-white/10 backdrop-blur-md border border-white/20 text-on-primary font-headline-md rounded-xl hover:bg-white/20 transition-all">الأسئلة
+                                الشائعة</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Stats Grid Mobile Support -->
+            <div class="fixed bottom-8 left-8 z-40 hidden md:block">
+                <div
+                    class="bg-surface/80 backdrop-blur-xl p-base rounded-full shadow-lg border border-outline-variant/30 flex items-center gap-md px-md">
+                    <div class="flex items-center gap-xs">
+                        <span class="w-3 h-3 bg-secondary rounded-full animate-pulse"></span>
+                        <span class="text-label-md font-label-md text-primary">الخادم متصل</span>
+                    </div>
+                    <div class="h-4 w-[1px] bg-outline-variant"></div>
+                    <div class="text-label-md font-label-md text-on-surface-variant">
+                        أخر تحديث: ٠٩:٤٥ م
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Counter Animation Logic
+                const observerOptions = {
+                    threshold: 0.1
+                };
+
+                const counterObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const target = entry.target;
+                            const countTo = parseInt(target.getAttribute('data-target'));
+                            let current = 0;
+                            const duration = 2000;
+                            const increment = countTo / (duration / 16);
+
+                            const updateCount = () => {
+                                current += increment;
+                                if (current < countTo) {
+                                    target.innerText = Math.floor(current);
+                                    requestAnimationFrame(updateCount);
+                                } else {
+                                    target.innerText = countTo + (target.innerText.includes('%') ? '%' : '');
+                                }
+                            };
+                            updateCount();
+                            counterObserver.unobserve(target);
+                        }
+                    });
+                }, observerOptions);
+
+                document.querySelectorAll('.counter').forEach(counter => {
+                    counterObserver.observe(counter);
+                });
+
+                // Parallax & Scroll effects
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset;
+                    const heroImage = document.querySelector('.lg\\:block .group img');
+                    if (heroImage) {
+                        heroImage.style.transform = `translateY(${scrolled * 0.1}px) scale(1.1)`;
+                    }
+                });
+            </script>
+        </div>
+    </main>
+    <footer class="w-full bg-primary text-on-primary py-lg mt-xl">
+        <div
+            class="max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-lg text-right">
+            <div class="flex flex-col gap-base">
+                <h3 class="text-headline-md font-headline-md mb-xs">تواصل معنا</h3>
+                <p class="text-body-md opacity-80">جامعة القاهرة، كلية العلاج الطبيعي</p>
+                <p class="text-body-md opacity-80">الجيزة، جمهورية مصر العربية</p>
+            </div>
+            <div class="flex flex-col gap-base">
+                <h3 class="text-headline-md font-headline-md mb-xs">روابط سريعة</h3><a
+                    class="text-body-md opacity-80 hover:opacity-100" href="#">شروط الالتحاق</a><a
+                    class="text-body-md opacity-80 hover:opacity-100" href="#">الأسئلة الشائعة</a>
+            </div>
+            <div class="flex flex-col gap-base">
+                <h3 class="text-headline-md font-headline-md mb-xs">الامتياز الطبي</h3>
+                <p class="text-body-md opacity-80">بوابة إدارة تدريب أطباء الامتياز - قصر العيني</p>
+            </div>
+        </div>
+        <div class="w-full border-t border-on-primary/10 mt-lg py-md text-center opacity-60 text-label-md">© ٢٠٢٤ كلية
+            العلاج الطبيعي - جامعة القاهرة. جميع الحقوق محفوظة.</div>
+    </footer>
+</body>
+
+</html>

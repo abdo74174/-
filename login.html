@@ -1,0 +1,223 @@
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+                font-family: "Source Sans 3", sans-serif;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { theme: { extend: { "colors": { "background": "#f8f9ff", "surface-tint": "#465f88", "surface-container-high": "#dce9ff", "primary-fixed": "#d6e3ff", "surface-bright": "#f8f9ff", "tertiary-fixed": "#ffdbcb", "on-secondary-container": "#006e6e", "inverse-on-surface": "#eaf1ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#b97958", "secondary": "#006a6a", "secondary-fixed": "#93f2f2", "secondary-fixed-dim": "#76d6d5", "on-primary-fixed": "#001b3d", "surface-variant": "#d3e4fe", "inverse-surface": "#213145", "outline": "#74777f", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#004f4f", "secondary-container": "#90efef", "primary-fixed-dim": "#aec7f6", "tertiary-container": "#3d1500", "surface": "#f8f9ff", "error": "#ba1a1a", "on-background": "#0b1c30", "inverse-primary": "#aec7f6", "surface-dim": "#cbdbf5", "on-primary-container": "#708ab5", "surface-container": "#e5eeff", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-secondary-fixed": "#002020", "on-surface-variant": "#44474e", "primary-container": "#002147", "on-tertiary-fixed": "#341100", "on-error": "#ffffff", "outline-variant": "#c4c6cf", "on-tertiary-fixed-variant": "#6c391d", "primary": "#000a1e", "on-primary-fixed-variant": "#2d476f", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "tertiary": "#180500", "tertiary-fixed-dim": "#ffb691", "surface-container-low": "#eff4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "16px", "xl": "80px", "lg": "48px", "sm": "12px", "base": "8px", "xs": "4px", "margin-desktop": "64px", "gutter": "24px", "md": "24px" }, "fontFamily": { "headline-lg": ["\"Source Serif 4\""], "display-lg": ["\"Source Serif 4\""], "headline-md": ["\"Source Serif 4\""], "body-lg": ["\"Source Sans 3\""], "label-md": ["\"Source Sans 3\""], "body-md": ["\"Source Sans 3\""], "headline-lg-mobile": ["\"Source Serif 4\""] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface">
+    <main class="min-h-screen flex items-center justify-center">
+        <div class="flex flex-col w-full items-center justify-center min-h-[80vh] px-4 py-xl" dir="rtl">
+            <!-- Decorative background elements -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+                <div
+                    class="absolute -top-[10%] -left-[5%] w-[40rem] h-[40rem] rounded-full bg-gradient-to-br from-surface-container-high via-transparent to-transparent blur-3xl">
+                </div>
+                <div
+                    class="absolute -bottom-[10%] -right-[5%] w-[35rem] h-[35rem] rounded-full bg-gradient-to-tl from-surface-container-high via-transparent to-transparent blur-3xl">
+                </div>
+            </div>
+            <!-- Login Container -->
+            <div class="relative w-full max-w-[1140px] grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+                <!-- Left Side: Brand & Illustration (Editorial Style) -->
+                <div class="hidden lg:flex lg:col-span-7 flex-col space-y-md">
+                    <div class="relative group overflow-hidden rounded-xl shadow-xl aspect-[4/5] bg-primary-container">
+                        <img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                            data-alt="A high-prestige cinematic shot of the historic Cairo University clock tower dome at sunset, captured in soft golden hour light. The architecture is detailed and classical. In the foreground, a medical professional in a clean white coat is blurred, holding a digital tablet. The color palette is deep navy, ivory, and hints of gold, reflecting academic excellence and modern healthcare management."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0TIdlZbZ4RVbAqw8NUkSvplYjNlvfHu9iOjfeXCO5ib5tkSj2rwIO6jt0_qsJwnMZH0VAI2m7eZozNGB1Uek_PYlLCYNe_Bh2IJvtYs5hIyVk7QHxrY6OFvkg2yN4Iz9HcFRyjpZLIveVtmNYJUq6Y7__RDogksXfwVH3yJ6iZBFiOZ13goXgtSKLlnA5YsbXqW5krl-wFiXdZaPXXpXKKfTUz6XlAkGtEV2Yp1jDQ0j_AIPZE7_J" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent">
+                        </div>
+                        <!-- Overlay Content -->
+                        <div class="absolute bottom-0 right-0 p-lg text-white">
+                            <p class="font-label-md text-secondary-fixed mb-sm tracking-widest uppercase">نظام إدارة
+                                الامتياز</p>
+                            <h2 class="font-display-lg text-headline-lg leading-tight mb-md">كلية العلاج
+                                الطبيعي<br />قصر العيني</h2>
+                            <div class="w-16 h-1 bg-secondary-fixed rounded-full"></div>
+                        </div>
+                    </div>
+                    <!-- Statistics/Trust Indicators -->
+                    <div class="grid grid-cols-3 gap-md pt-md">
+                        <div class="flex flex-col">
+                            <span class="font-display-lg text-primary text-headline-md">+١٥٠٠</span>
+                            <span class="font-label-md text-outline">متدرب سنوياً</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-display-lg text-primary text-headline-md">١٢</span>
+                            <span class="font-label-md text-outline">قسم تخصصي</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-display-lg text-primary text-headline-md">١٠٠٪</span>
+                            <span class="font-label-md text-outline">تحول رقمي</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side: Login Form -->
+                <div class="lg:col-span-5 flex flex-col justify-center">
+                    <div
+                        class="bg-surface-container-lowest p-lg lg:p-xl rounded-xl shadow-md flex flex-col space-y-lg relative overflow-hidden">
+                        <!-- Logo Header -->
+                        <div class="flex flex-col items-center justify-center mb-2">
+                            <div class="flex items-center gap-4 justify-center">
+                                <div class="w-[72px] h-[72px] flex items-center justify-center bg-[#F3EFE4] p-1">
+                                    <img class="w-full h-full object-contain mix-blend-multiply"
+                                        alt="Cairo University Logo"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmcLqPZYN-Jv-0ohQJcpRuBD2sTH1cAJRHGj9jsPIAVlzf7m8Eg4HsIyuuTv3gEz7S3z5Np4fyheTkwPdZvekQWylDsrNy55sKnOuecT1nqUHPw8a0Qmpic4icokHA1Uup3J8D_FrfwqtvTyw8Xp-ZzxU0gyAXX8sYBirHzY6LPzg-7Qj9rxfsi6WlWEqvuenWhh4Cg2YzSekS1JRqHN_sl7taTuH5bKF30UgT_v33F9cvO3LWtFHM" />
+                                </div>
+                                <div class="w-0.5 h-14 bg-primary"></div>
+                                <div class="flex flex-col text-right">
+                                    <h1 class="text-[26px] text-primary font-bold leading-tight tracking-wide"
+                                        style="font-family: 'Source Serif 4', serif;">كلية العلاج الطبيعي</h1>
+                                    <p class="text-[15px] text-[#708ab5] font-bold leading-tight mt-1">جامعة القاهرة -
+                                        قصر العيني</p>
+                                </div>
+                            </div>
+                            <div class="mt-10 text-center space-y-xs">
+                                <h2 class="font-headline-lg text-on-surface">تسجيل الدخول</h2>
+                                <p class="font-body-md text-outline">مرحباً بك في بوابة الامتياز الرقمية</p>
+                            </div>
+                        </div>
+                        <!-- Form Fields -->
+                        <form class="flex flex-col space-y-md" onsubmit="return false;">
+                            <!-- Email Field -->
+                            <div class="space-y-base group">
+                                <label class="block font-label-md text-on-surface-variant px-1" for="email">البريد
+                                    الإلكتروني</label>
+                                <div class="relative">
+                                    <span
+                                        class="material-symbols-outlined absolute right-md top-1/2 -translate-y-1/2 text-outline group-focus-within:text-secondary transition-colors">mail</span>
+                                    <input
+                                        class="w-full pr-12 pl-md py-4 bg-surface-container-low border-b-2 border-transparent focus:border-secondary focus:bg-white transition-all outline-none font-body-md rounded-t-lg"
+                                        id="email" placeholder="example@cu.edu.eg" type="email" />
+                                </div>
+                            </div>
+                            <!-- Password Field -->
+                            <div class="space-y-base group">
+                                <div class="flex justify-between items-center px-1">
+                                    <label class="block font-label-md text-on-surface-variant" for="password">كلمة
+                                        المرور</label>
+                                    <a class="font-label-md text-secondary hover:text-on-secondary-container transition-colors"
+                                        href="#">نسيت كلمة المرور؟</a>
+                                </div>
+                                <div class="relative">
+                                    <span
+                                        class="material-symbols-outlined absolute right-md top-1/2 -translate-y-1/2 text-outline group-focus-within:text-secondary transition-colors">lock</span>
+                                    <input
+                                        class="w-full pr-12 pl-md py-4 bg-surface-container-low border-b-2 border-transparent focus:border-secondary focus:bg-white transition-all outline-none font-body-md rounded-t-lg"
+                                        id="password" placeholder="••••••••" type="password" />
+                                    <button
+                                        class="absolute left-md top-1/2 -translate-y-1/2 text-outline hover:text-on-surface"
+                                        type="button">
+                                        <span class="material-symbols-outlined text-[20px]">visibility</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Keep me logged in -->
+                            <label class="flex items-center space-x-reverse space-x-sm cursor-pointer py-xs">
+                                <input class="w-5 h-5 rounded accent-secondary" type="checkbox" />
+                                <span class="font-label-md text-on-surface-variant">تذكرني في هذا الجهاز</span>
+                            </label>
+                            <!-- Submit Button -->
+                            <button
+                                class="w-full bg-primary-container text-on-primary py-lg rounded-xl font-headline-md hover:bg-primary transition-all shadow-lg active:scale-[0.98] flex items-center justify-center gap-md group">
+                                <span>دخول للمنصة</span>
+                                <span
+                                    class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            </button>
+
+                            <!-- Demo Logins -->
+                            <div class="flex flex-col gap-sm pt-4">
+                                <div class="flex items-center justify-center gap-2">
+                                    <div class="h-[1px] bg-outline-variant/50 flex-1"></div>
+                                    <span class="font-label-md text-outline px-2">أو الدخول كنسخة تجريبية</span>
+                                    <div class="h-[1px] bg-outline-variant/50 flex-1"></div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-sm mt-2">
+                                    <button onclick="window.location.href='Student.html'"
+                                        class="w-full bg-surface text-secondary border border-secondary/30 py-md rounded-xl font-label-md hover:bg-secondary hover:text-on-secondary hover:border-secondary transition-all flex items-center justify-center gap-2 shadow-sm"
+                                        type="button">
+                                        <span class="material-symbols-outlined text-[18px]">school</span>
+                                        طالب
+                                    </button>
+                                    <button onclick="window.location.href='Admin.html'"
+                                        class="w-full bg-surface text-primary border border-primary/30 py-md rounded-xl font-label-md hover:bg-primary hover:text-on-primary hover:border-primary transition-all flex items-center justify-center gap-2 shadow-sm"
+                                        type="button">
+                                        <span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+                                        مسؤول
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Footer Links -->
+                        <div class="pt-md border-t border-surface-variant text-center">
+                            <p class="font-body-md text-on-surface-variant">
+                                ليس لديك حساب؟
+                                <a class="font-label-md text-secondary hover:underline mr-xs" href="register.html">سجل
+                                    الآن كممتدرب
+                                    جديد</a>
+                            </p>
+                        </div>
+                        <!-- Decorative corner accent -->
+                        <div
+                            class="absolute -top-12 -left-12 w-24 h-24 bg-surface-container-high rounded-full opacity-50">
+                        </div>
+                    </div>
+                    <!-- Footer Meta -->
+                    <div
+                        class="mt-md flex flex-col md:flex-row justify-between items-center text-outline font-label-md px-md">
+                        <span>© ٢٠٢٤ جامعة القاهرة</span>
+                        <div class="flex space-x-reverse space-x-md mt-sm md:mt-0">
+                            <a class="hover:text-primary transition-colors" href="#">الدعم الفني</a>
+                            <span class="text-surface-variant">|</span>
+                            <a class="hover:text-primary transition-colors" href="#">سياسة الخصوصية</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Script for subtle form interaction -->
+            <script>
+                document.querySelectorAll('input').forEach(input => {
+                    input.addEventListener('focus', () => {
+                        input.parentElement.parentElement.classList.add('scale-[1.01]');
+                    });
+                    input.addEventListener('blur', () => {
+                        input.parentElement.parentElement.classList.remove('scale-[1.01]');
+                    });
+                });
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

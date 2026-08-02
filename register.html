@@ -1,0 +1,403 @@
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+                font-family: "Source Sans 3", sans-serif;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { theme: { extend: { "colors": { "background": "#f8f9ff", "surface-tint": "#465f88", "surface-container-high": "#dce9ff", "primary-fixed": "#d6e3ff", "surface-bright": "#f8f9ff", "tertiary-fixed": "#ffdbcb", "on-secondary-container": "#006e6e", "inverse-on-surface": "#eaf1ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#b97958", "secondary": "#006a6a", "secondary-fixed": "#93f2f2", "secondary-fixed-dim": "#76d6d5", "on-primary-fixed": "#001b3d", "surface-variant": "#d3e4fe", "inverse-surface": "#213145", "outline": "#74777f", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#004f4f", "secondary-container": "#90efef", "primary-fixed-dim": "#aec7f6", "tertiary-container": "#3d1500", "surface": "#f8f9ff", "error": "#ba1a1a", "on-background": "#0b1c30", "inverse-primary": "#aec7f6", "surface-dim": "#cbdbf5", "on-primary-container": "#708ab5", "surface-container": "#e5eeff", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-secondary-fixed": "#002020", "on-surface-variant": "#44474e", "primary-container": "#002147", "on-tertiary-fixed": "#341100", "on-error": "#ffffff", "outline-variant": "#c4c6cf", "on-tertiary-fixed-variant": "#6c391d", "primary": "#000a1e", "on-primary-fixed-variant": "#2d476f", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "tertiary": "#180500", "tertiary-fixed-dim": "#ffb691", "surface-container-low": "#eff4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "16px", "xl": "80px", "lg": "48px", "sm": "12px", "base": "8px", "xs": "4px", "margin-desktop": "64px", "gutter": "24px", "md": "24px" }, "fontFamily": { "headline-lg": ["\"Source Serif 4\""], "display-lg": ["\"Source Serif 4\""], "headline-md": ["\"Source Serif 4\""], "body-lg": ["\"Source Sans 3\""], "label-md": ["\"Source Sans 3\""], "body-md": ["\"Source Sans 3\""], "headline-lg-mobile": ["\"Source Serif 4\""] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface">
+    <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,33,71,0.05)]">
+        <div
+            class="h-20 max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-14 h-14 flex items-center justify-center bg-[#F3EFE4] p-1 rounded-sm">
+                    <img alt="Cairo University Logo" class="w-full h-full object-contain mix-blend-multiply"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmcLqPZYN-Jv-0ohQJcpRuBD2sTH1cAJRHGj9jsPIAVlzf7m8Eg4HsIyuuTv3gEz7S3z5Np4fyheTkwPdZvekQWylDsrNy55sKnOuecT1nqUHPw8a0Qmpic4icokHA1Uup3J8D_FrfwqtvTyw8Xp-ZzxU0gyAXX8sYBirHzY6LPzg-7Qj9rxfsi6WlWEqvuenWhh4Cg2YzSekS1JRqHN_sl7taTuH5bKF30UgT_v33F9cvO3LWtFHM" />
+                </div>
+                <div class="w-0.5 h-12 bg-primary"></div>
+                <div class="flex flex-col pr-1 text-right">
+                    <span class="text-[22px] font-bold text-primary leading-tight tracking-wide" style="font-family: 'Source Serif 4', serif;">كلية العلاج الطبيعي</span>
+                    <span class="text-[13px] font-bold text-[#708ab5] leading-tight mt-0.5">جامعة القاهرة - قصر العيني</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-md"
+                data-active-classes="text-primary font-bold border-b-2 border-primary"><a
+                    class="text-body-md text-on-surface-variant hover:text-primary transition-colors py-2"
+                    data-path="home" href="index.html">الرئيسية</a><a aria-current="page"
+                    class="transition-colors py-2 text-primary font-bold border-b-2 border-primary" data-path="register"
+                    href="register.html">التسجيل</a><a
+                    class="text-body-md text-on-surface-variant hover:text-primary transition-colors py-2"
+                    data-path="login" href="login.html">دخول</a></nav>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[20px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20">
+        <div class="flex flex-col w-full">
+            <!-- Background Decorative Elements -->
+            <div class="relative overflow-hidden w-full bg-background">
+                <div
+                    class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-tr from-secondary/5 to-transparent pointer-events-none">
+                </div>
+                <div class="max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop py-xl">
+                    <!-- Registration Layout Grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                        <!-- Left Side: Informative/Brand Panel -->
+                        <div class="lg:col-span-5 flex flex-col gap-lg sticky top-24 order-2 lg:order-1">
+                            <div class="flex flex-col gap-md">
+                                <div
+                                    class="w-20 h-20 rounded-xl bg-primary flex items-center justify-center shadow-lg transform -rotate-3">
+                                    <span
+                                        class="material-symbols-outlined text-on-primary text-[40px]">person_add</span>
+                                </div>
+                                <h1 class="font-headline-lg text-headline-lg text-primary">بوابة تسجيل أطباء الامتياز
+                                </h1>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                                    مرحباً بك في نظام الإدارة الإلكتروني لتدريب أطباء الامتياز بكلية العلاج الطبيعي -
+                                    جامعة القاهرة. يرجى التأكد من دقة البيانات المدخلة حيث سيتم استخدامها في استخراج
+                                    شهادات التدريب الرسمية.
+                                </p>
+                            </div>
+                            <!-- Guidelines Card -->
+                            <div class="bg-surface-container rounded-xl p-md flex flex-col gap-base">
+                                <h3 class="font-label-md text-label-md text-primary-container uppercase tracking-wider">
+                                    تعليمات التسجيل</h3>
+                                <ul class="flex flex-col gap-sm">
+                                    <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                        <span>يجب كتابة الاسم الرباعي كما هو مدون ببطاقة الرقم القومي.</span>
+                                    </li>
+                                    <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                        <span>تأكد من كتابة البريد الإلكتروني بشكل صحيح لاستلام الإشعارات.</span>
+                                    </li>
+                                    <li class="flex items-start gap-sm text-body-md text-on-surface-variant">
+                                        <span
+                                            class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+                                        <span>يجب أن يتطابق تاريخ بدء ونهاية التدريب مع الخطاب الرسمي.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Decorative Image -->
+                            <div class="relative group hidden lg:block">
+                                <div
+                                    class="absolute -inset-2 bg-gradient-to-r from-secondary to-primary-container rounded-xl blur opacity-10 group-hover:opacity-20 transition duration-1000">
+                                </div>
+                                <img class="relative rounded-xl shadow-xl grayscale hover:grayscale-0 transition duration-700 w-full aspect-[16/9] object-cover"
+                                    data-alt="Close up professional photo of a modern medical faculty building, Cairo University style architecture with high ceilings, clean marble surfaces, and soft academic lighting. Scholars and medical professionals walking in the blurred background. 8k resolution, cinematic lighting, corporate academic aesthetic."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuATS6EU4NQOYVENomjYKdr9zji-k3V3ItlR2VQoS7xz3ESZYGhO5pFn0Uu6lGwML5t3p8KKqwOzl9Ya8tK25nbh9rXpXYYLHRH-staGX3-lBRIYMclyd1YgHvKgxfmxCtxwr7mdnVusNwkPq7O6TB8OzD4WjKvobS1IWWRUeFhaBcNEK5GhMGeD_d1RR71C8-VnKfcuxTIJ37Bxn5rvBwuODBFr9MbKakx9SENOqqwrBqQ73YkNsCNF" />
+                            </div>
+                        </div>
+                        <!-- Right Side: Registration Form -->
+                        <div class="lg:col-span-7 order-1 lg:order-2">
+                            <div
+                                class="bg-surface-container-lowest rounded-xl shadow-xl p-lg border border-surface-container-high relative overflow-hidden">
+                                <!-- Progress Indication -->
+                                <div class="absolute top-0 right-0 left-0 h-1 bg-surface-container-high">
+                                    <div class="h-full bg-secondary w-0 transition-all duration-500" id="form-progress">
+                                    </div>
+                                </div>
+                                <form class="flex flex-col gap-lg mt-base" id="registrationForm">
+                                    <!-- Personal Data Section -->
+                                    <div class="flex flex-col gap-md">
+                                        <div class="flex items-center gap-sm">
+                                            <span
+                                                class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">١</span>
+                                            <h2 class="font-headline-md text-headline-md text-primary">البيانات الشخصية
+                                            </h2>
+                                        </div>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">الاسم
+                                                    رباعي (بالعربية)</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface"
+                                                    placeholder="أحمد محمد علي حسن" required="" type="text" />
+                                            </div>
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">English
+                                                    Full Name</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface text-left"
+                                                    dir="ltr" placeholder="Ahmed Mohamed Ali Hassan" required=""
+                                                    type="text" />
+                                            </div>
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">الرقم
+                                                    القومي (١٤ رقم)</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface"
+                                                    maxlength="14" placeholder="29901010000000" required=""
+                                                    type="text" />
+                                            </div>
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">رقم
+                                                    الهاتف</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface"
+                                                    placeholder="01xxxxxxxxx" required="" type="tel" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Academic Data Section -->
+                                    <div class="flex flex-col gap-md">
+                                        <div class="flex items-center gap-sm">
+                                            <span
+                                                class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">٢</span>
+                                            <h2 class="font-headline-md text-headline-md text-primary">بيانات الامتياز
+                                            </h2>
+                                        </div>
+                                        <div class="flex flex-col gap-xs">
+                                            <label class="font-label-md text-label-md text-on-surface-variant pr-1">اسم
+                                                الجامعة</label>
+                                            <select
+                                                class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface appearance-none"
+                                                required="">
+                                                <option disabled="" selected="" value="">اختر الجامعة التابع لها
+                                                </option>
+                                                <option>جامعة القاهرة</option>
+                                                <option>جامعة عين شمس</option>
+                                                <option>جامعة الإسكندرية</option>
+                                                <option>جامعة خاصة / أخرى</option>
+                                            </select>
+                                        </div>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">تاريخ
+                                                    بدء الامتياز</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface"
+                                                    required="" type="date" />
+                                            </div>
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">تاريخ
+                                                    إنهاء الامتياز</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface"
+                                                    required="" type="date" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Account Security Section -->
+                                    <div class="flex flex-col gap-md">
+                                        <div class="flex items-center gap-sm">
+                                            <span
+                                                class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">٣</span>
+                                            <h2 class="font-headline-md text-headline-md text-primary">أمان الحساب</h2>
+                                        </div>
+                                        <div class="flex flex-col gap-xs">
+                                            <label
+                                                class="font-label-md text-label-md text-on-surface-variant pr-1">البريد
+                                                الإلكتروني</label>
+                                            <input
+                                                class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface text-left"
+                                                dir="ltr" placeholder="example@mail.com" required="" type="email" />
+                                        </div>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">كلمة
+                                                    المرور</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface"
+                                                    placeholder="••••••••" required="" type="password" />
+                                            </div>
+                                            <div class="flex flex-col gap-xs">
+                                                <label
+                                                    class="font-label-md text-label-md text-on-surface-variant pr-1">تأكيد
+                                                    كلمة المرور</label>
+                                                <input
+                                                    class="bg-surface border-b-2 border-outline-variant focus:border-secondary focus:outline-none p-md transition-colors font-body-md text-on-surface"
+                                                    placeholder="••••••••" required="" type="password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Submission -->
+                                    <div class="flex flex-col gap-md pt-md">
+                                        <div class="flex items-center gap-base">
+                                            <input
+                                                class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-secondary"
+                                                id="terms" required="" type="checkbox" />
+                                            <label class="font-body-md text-body-md text-on-surface-variant"
+                                                for="terms">أقر بأن جميع البيانات صحيحة وعلى مسؤوليتي الشخصية.</label>
+                                        </div>
+                                        <button
+                                            class="w-full bg-primary text-on-primary font-label-md text-label-md py-md rounded-xl shadow-md hover:bg-primary-container transition-all flex items-center justify-center gap-base group"
+                                            type="submit">
+                                            إنشاء حساب جديد
+                                            <span
+                                                class="material-symbols-outlined group-hover:-translate-x-2 transition-transform">arrow_back</span>
+                                        </button>
+                                        <div
+                                            class="flex items-center justify-center gap-xs text-body-md text-on-surface-variant">
+                                            <span>لديك حساب بالفعل؟</span>
+                                            <a class="text-secondary font-bold hover:underline" href="#">تسجيل
+                                                الدخول</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Micro-interaction: Form Progress Bar
+            const form = document.getElementById('registrationForm');
+            const inputs = form.querySelectorAll('input, select');
+            const progressBar = document.getElementById('form-progress');
+
+            const updateProgress = () => {
+                const total = inputs.length;
+                let filled = 0;
+                inputs.forEach(input => {
+                    if (input.value && input.value.trim() !== '' && (input.type !== 'checkbox' || input.checked)) {
+                        filled++;
+                    }
+                });
+                const percentage = (filled / total) * 100;
+                progressBar.style.width = `${percentage}%`;
+            };
+
+            inputs.forEach(input => {
+                input.addEventListener('input', updateProgress);
+                input.addEventListener('change', updateProgress);
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Visual feedback for submission
+                const btn = form.querySelector('button[type="submit"]');
+                const originalContent = btn.innerHTML;
+                btn.innerHTML = '<span class="material-symbols-outlined animate-spin">sync</span> جاري المعالجة...';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    btn.innerHTML = '<span class="material-symbols-outlined">done_all</span> تم التسجيل بنجاح';
+                    btn.classList.replace('bg-primary', 'bg-on-secondary-container');
+                }, 1500);
+            });
+
+            // Simple date range validation
+            const startDateInput = form.querySelector('input[type="date"]:first-of-type');
+            const endDateInput = form.querySelector('input[type="date"]:last-of-type');
+
+            // Default start date to first day of current month
+            const now = new Date();
+            const firstOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+            const yyyy = firstOfMonth.getFullYear();
+            const mm = String(firstOfMonth.getMonth() + 1).padStart(2, '0');
+            const dd = '01';
+            startDateInput.value = `${yyyy}-${mm}-${dd}`;
+
+            endDateInput.addEventListener('change', () => {
+                if (startDateInput.value && endDateInput.value < startDateInput.value) {
+                    alert('تاريخ النهاية يجب أن يكون بعد تاريخ البدء');
+                    endDateInput.value = '';
+                }
+            });
+        </script>
+        <style>
+            /* Custom Scrollbar for better RTL feel */
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #002147;
+                border-radius: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                filter: invert(0.2);
+                cursor: pointer;
+            }
+
+            /* Selection Color */
+            ::selection {
+                background-color: #90efef;
+                color: #002020;
+            }
+        </style>
+    </main>
+    <footer class="w-full bg-primary text-on-primary py-lg mt-xl">
+        <div
+            class="max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-lg text-right">
+            <div class="flex flex-col gap-base">
+                <h3 class="text-headline-md font-headline-md mb-xs">تواصل معنا</h3>
+                <p class="text-body-md opacity-80">جامعة القاهرة، كلية العلاج الطبيعي</p>
+                <p class="text-body-md opacity-80">الجيزة، جمهورية مصر العربية</p>
+            </div>
+            <div class="flex flex-col gap-base">
+                <h3 class="text-headline-md font-headline-md mb-xs">روابط سريعة</h3><a
+                    class="text-body-md opacity-80 hover:opacity-100" href="#">شروط الالتحاق</a><a
+                    class="text-body-md opacity-80 hover:opacity-100" href="#">الأسئلة الشائعة</a>
+            </div>
+            <div class="flex flex-col gap-base">
+                <h3 class="text-headline-md font-headline-md mb-xs">الامتياز الطبي</h3>
+                <p class="text-body-md opacity-80">بوابة إدارة تدريب أطباء الامتياز - قصر العيني</p>
+            </div>
+        </div>
+        <div class="w-full border-t border-on-primary/10 mt-lg py-md text-center opacity-60 text-label-md">© ٢٠٢٤ كلية
+            العلاج الطبيعي - جامعة القاهرة. جميع الحقوق محفوظة.</div>
+    </footer>
+</body>
+
+</html>

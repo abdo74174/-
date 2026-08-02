@@ -1,0 +1,553 @@
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+                font-family: "Source Sans 3", sans-serif;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { theme: { extend: { "colors": { "background": "#f8f9ff", "surface-tint": "#465f88", "surface-container-high": "#dce9ff", "primary-fixed": "#d6e3ff", "surface-bright": "#f8f9ff", "tertiary-fixed": "#ffdbcb", "on-secondary-container": "#006e6e", "inverse-on-surface": "#eaf1ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#b97958", "secondary": "#006a6a", "secondary-fixed": "#93f2f2", "secondary-fixed-dim": "#76d6d5", "on-primary-fixed": "#001b3d", "surface-variant": "#d3e4fe", "inverse-surface": "#213145", "outline": "#74777f", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#004f4f", "secondary-container": "#90efef", "primary-fixed-dim": "#aec7f6", "tertiary-container": "#3d1500", "surface": "#f8f9ff", "error": "#ba1a1a", "on-background": "#0b1c30", "inverse-primary": "#aec7f6", "surface-dim": "#cbdbf5", "on-primary-container": "#708ab5", "surface-container": "#e5eeff", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-secondary-fixed": "#002020", "on-surface-variant": "#44474e", "primary-container": "#002147", "on-tertiary-fixed": "#341100", "on-error": "#ffffff", "outline-variant": "#c4c6cf", "on-tertiary-fixed-variant": "#6c391d", "primary": "#000a1e", "on-primary-fixed-variant": "#2d476f", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "tertiary": "#180500", "tertiary-fixed-dim": "#ffb691", "surface-container-low": "#eff4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "16px", "xl": "80px", "lg": "48px", "sm": "12px", "base": "8px", "xs": "4px", "margin-desktop": "64px", "gutter": "24px", "md": "24px" }, "fontFamily": { "headline-lg": ["\"Source Serif 4\""], "display-lg": ["\"Source Serif 4\""], "headline-md": ["\"Source Serif 4\""], "body-lg": ["\"Source Sans 3\""], "label-md": ["\"Source Sans 3\""], "body-md": ["\"Source Sans 3\""], "headline-lg-mobile": ["\"Source Serif 4\""] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface">
+    <aside
+        class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col border-l border-outline-variant shadow-lg">
+        <div class="p-6 flex flex-col items-center gap-4 border-b border-outline-variant mb-6"><img alt="Logo"
+                class="h-16 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuApBXQuXn7-aJhtKkcM6vEnE_kEQ_a-0bXaZ11hnVyMibb4KWyFMhmB0g7Iwq1XRKoWa24xteOaNbWY-QI0TxpMewcTHvxOHy9pbmU92-iZUVSmlNKbhmgLhTR5xKLEbXSZ_EvLuArQvFQqG5kmXoObEbFJpL8LRbhvdwPq1YE7E2U_oa7V4WUnXThekTBXD5nvBvzTs5dkeOamj3ulb9TTXQ2SP5r--95ryq9EgXgJMqsoE-U9qKfH" />
+        </div>
+        <nav class="flex-1 px-4 space-y-2"
+            data-active-classes="bg-primary-container text-on-primary-container font-bold"><a
+                class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-all gap-4"
+                data-path="home" href="index.html"><span class="material-symbols-outlined">home</span><span>الرئيسية</span></a><a
+                aria-current="page"
+                class="flex items-center px-4 py-3 rounded-xl transition-all gap-4 bg-primary-container text-on-primary-container font-bold"
+                data-path="student-dashboard" href="Student.html"><span class="material-symbols-outlined">person</span><span>لوحة
+                    تحكم الطالب</span></a><a
+                class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-all gap-4"
+                data-path="admin-dashboard" href="Admin.html"><span
+                    class="material-symbols-outlined">admin_panel_settings</span><span>لوحة تحكم المسؤول</span></a><a
+                class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-all gap-4"
+                data-path="register" href="register.html"><span
+                    class="material-symbols-outlined">app_registration</span><span>التسجيل</span></a></nav>
+    </aside>
+    <div class="pr-72">
+        <header
+            class="fixed top-0 left-0 right-72 h-16 bg-surface/80 backdrop-blur-xl border-b border-outline-variant z-40 flex items-center justify-between px-md">
+            <div class="flex items-center gap-4">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span
+                    class="text-label-md text-on-surface-variant">مرحباً بك، د. أحمد علي</span>
+            </div>
+            <div class="flex items-center gap-md">
+                <!-- Demo Toggle -->
+                <label class="flex items-center cursor-pointer gap-2 bg-surface-container-low px-3 py-1 rounded-full border border-outline-variant/30 ml-2">
+                    <span class="text-xs font-bold text-on-surface-variant">محاكاة التفعيل</span>
+                    <div class="relative">
+                        <input type="checkbox" id="demo-activation-toggle" class="sr-only">
+                        <div class="block bg-outline-variant w-10 h-6 rounded-full transition-colors" id="toggle-bg"></div>
+                        <div class="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform" id="toggle-dot"></div>
+                    </div>
+                </label>
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer">notifications</span><span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer">search</span>
+            </div>
+        </header>
+        <main class="relative pt-16 bg-background min-h-screen p-md">
+            <div class="flex flex-col w-full gap-gutter">
+                <!-- Header Notification & Hero Status -->
+                <section class="relative grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+                    <div class="md:col-span-8 flex flex-col gap-sm">
+                        <div id="status-pill"
+                            class="inline-flex items-center self-start px-4 py-1.5 rounded-full bg-error-container text-on-error-container gap-2 shadow-sm animate-pulse transition-colors">
+                            <span id="status-icon" class="material-symbols-outlined text-[20px]">warning</span>
+                            <span id="status-text" class="font-label-md text-label-md">الحساب غير مفعل حالياً</span>
+                        </div>
+                        <h1 class="font-headline-lg text-headline-lg text-on-background">مرحباً بك في بوابة الامتياز
+                            الرقمية</h1>
+                        <p id="status-desc" class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                            يرجى استكمال رفع المستندات المطلوبة لتفعيل حسابك والبدء في اختيار التخصصات المتاحة للتدريب
+                            العملي في مستشفيات قصر العيني.
+                        </p>
+                    </div>
+                    <div id="status-card"
+                        class="md:col-span-4 bg-surface-container-lowest p-md rounded-xl shadow-md flex flex-col gap-md border-r-4 border-error transition-colors">
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">حالة
+                                الطلب</span>
+                            <span id="status-badge" class="font-label-md text-label-md text-error bg-error/10 px-2 py-0.5 rounded transition-colors">غير
+                                نشط</span>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-on-surface">
+                                <span class="font-body-md text-body-md">اكتمال الملف الشخصي</span>
+                                <span id="status-progress-text" class="font-label-md text-label-md">35%</span>
+                            </div>
+                            <div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+                                <div id="status-progress-bar" class="h-full bg-error w-[35%] transition-all duration-1000 ease-out"></div>
+                            </div>
+                        </div>
+                        <p id="status-msg" class="font-label-md text-label-md text-on-surface-variant">بانتظار مراجعة المستندات من قبل
+                            الإدارة المركزية.</p>
+                    </div>
+                </section>
+                <!-- Main Content Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+                    <!-- Top Row: Personal Data (Col 4) & Document Upload (Col 8) -->
+                    <div class="lg:col-span-4 flex flex-col gap-gutter">
+                        <!-- Personal Data Section -->
+                        <section class="bg-surface-container-lowest p-lg rounded-xl shadow-sm relative overflow-hidden h-full">
+                            <div class="absolute -top-4 -left-4 p-4 opacity-5 pointer-events-none">
+                                <span class="material-symbols-outlined text-[150px]">badge</span>
+                            </div>
+                            <div class="flex flex-col gap-md relative z-10">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-1.5 h-8 bg-primary rounded-full"></div>
+                                    <h2 class="font-headline-md text-headline-md">بيانات المتدرب</h2>
+                                </div>
+                                <div class="flex flex-col gap-md mt-sm">
+                                    <div class="flex flex-col gap-xs">
+                                        <span class="font-label-md text-label-md text-on-surface-variant">الاسم
+                                            الكامل</span>
+                                        <span class="font-body-lg text-body-lg font-bold">أحمد محمد علي السيد</span>
+                                    </div>
+                                    <div class="flex flex-col gap-xs">
+                                        <span class="font-label-md text-label-md text-on-surface-variant">الجامعة</span>
+                                        <span class="font-body-lg text-body-lg">جامعة القاهرة - كلية العلاج
+                                            الطبيعي</span>
+                                    </div>
+                                    <div class="flex flex-col gap-xs">
+                                        <span class="font-label-md text-label-md text-on-surface-variant">مدة
+                                            الامتياز</span>
+                                        <span class="font-body-lg text-body-lg">12 شهر (سنة كاملة)</span>
+                                    </div>
+                                    <div class="flex flex-col gap-xs">
+                                        <span class="font-label-md text-label-md text-on-surface-variant">الرقم
+                                            القومي</span>
+                                        <span class="font-body-lg text-body-lg">2990501******</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="lg:col-span-8 flex flex-col gap-gutter">
+                        <!-- Document Upload Form -->
+                        <section class="bg-surface-container-lowest p-lg rounded-xl shadow-sm h-full flex flex-col">
+                            <div class="flex flex-col gap-md flex-1">
+                                <div class="flex items-center gap-4 mb-2">
+                                    <div class="w-1.5 h-8 bg-primary rounded-full"></div>
+                                    <h2 class="font-headline-md text-headline-md">رفع المستندات المطلوبة</h2>
+                                </div>
+                                <form class="flex flex-col gap-gutter flex-1 justify-between">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                        <!-- Receipt Upload -->
+                                        <div class="flex flex-col gap-sm">
+                                            <label class="font-label-md text-label-md text-on-surface">إيصال الدفع
+                                                البنكي</label>
+                                            <div
+                                                class="relative group cursor-pointer border-2 border-dashed border-outline-variant rounded-xl p-md flex flex-col items-center gap-2 hover:bg-surface-container transition-colors">
+                                                <span
+                                                    class="material-symbols-outlined text-outline text-[32px]">payments</span>
+                                                <span class="font-label-md text-label-md text-outline">اضغط للرفع أو
+                                                    اسحب الملف هنا</span>
+                                                <input class="absolute inset-0 opacity-0 cursor-pointer" type="file" />
+                                            </div>
+                                        </div>
+                                        <!-- University Statement -->
+                                        <div class="flex flex-col gap-sm">
+                                            <label class="font-label-md text-label-md text-on-surface">إفادة الجامعة
+                                                (بيان نجاح)</label>
+                                            <div
+                                                class="relative group cursor-pointer border-2 border-dashed border-outline-variant rounded-xl p-md flex flex-col items-center gap-2 hover:bg-surface-container transition-colors">
+                                                <span
+                                                    class="material-symbols-outlined text-outline text-[32px]">school</span>
+                                                <span class="font-label-md text-label-md text-outline">اضغط للرفع أو
+                                                    اسحب الملف هنا</span>
+                                                <input class="absolute inset-0 opacity-0 cursor-pointer" type="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Duration Choice -->
+                                    <div class="flex flex-col gap-sm">
+                                        <label class="font-label-md text-label-md text-on-surface">تحديد فترة الامتياز
+                                            المفضلة</label>
+                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-sm">
+                                            <button
+                                                class="px-md py-sm rounded-lg border border-primary-container bg-primary-container/10 text-primary font-label-md hover:bg-primary-container hover:text-on-primary-container transition-all"
+                                                type="button">6 أشهر</button>
+                                            <button
+                                                class="px-md py-sm rounded-lg border border-outline-variant bg-transparent text-on-surface-variant font-label-md hover:border-primary transition-all"
+                                                type="button">9 أشهر</button>
+                                            <button
+                                                class="px-md py-sm rounded-lg border border-outline-variant bg-transparent text-on-surface-variant font-label-md hover:border-primary transition-all"
+                                                type="button">12 شهر (توصية)</button>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="w-full md:w-fit self-end bg-primary text-on-primary px-xl py-3 rounded-full font-label-md shadow-md hover:shadow-xl transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2"
+                                        type="submit">
+                                        <span>إرسال المستندات للمراجعة</span>
+                                        <span class="material-symbols-outlined">send</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Bottom Row: Department Selection (Col 12) mimicking Admin Hierarchy -->
+                    <div class="lg:col-span-12">
+                        <section class="bg-surface-container-lowest p-lg rounded-xl shadow-sm relative overflow-hidden">
+                            <!-- Locked Overlay -->
+                            <div id="locked-overlay" class="absolute inset-0 z-20 backdrop-blur-md bg-white/70 flex flex-col items-center justify-center p-xl text-center transition-opacity duration-300">
+                                <div class="bg-surface-container-lowest p-lg rounded-2xl shadow-2xl flex flex-col items-center gap-md border border-error/20 max-w-md animate-pulse">
+                                    <div class="w-16 h-16 rounded-full bg-error-container flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-[40px] text-error">lock</span>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <h3 class="font-headline-md text-headline-md text-on-surface">تسجيل الرغبات مغلق حالياً</h3>
+                                        <p class="font-body-md text-body-md text-on-surface-variant">يجب استكمال رفع المستندات ومراجعتها من قبل الإدارة المركزية أولاً لتتمكن من اختيار الأقسام (المربعات) المتاحة وتوزيعك.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-xl gap-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-1.5 h-8 bg-secondary rounded-full"></div>
+                                    <div>
+                                        <h2 class="font-headline-md text-headline-md">تسجيل الرغبات واختيار الأقسام</h2>
+                                        <p class="text-label-md text-on-surface-variant mt-1">اختر القسم التدريبي المفضل في المستشفيات المتاحة</p>
+                                    </div>
+                                </div>
+                                <!-- Filters matching admin categories -->
+                                <div class="flex gap-sm bg-surface-container-low p-1 rounded-full w-fit">
+                                    <button class="bg-primary text-on-primary px-4 py-1.5 rounded-full text-sm font-bold shadow-sm">امتياز (سنة)</button>
+                                </div>
+                            </div>
+
+                            <!-- Hierarchy Grid: Branches as Cards, Departments inside -->
+                            <div id="departments-grid" class="grid grid-cols-1 md:grid-cols-2 gap-gutter opacity-40 grayscale pointer-events-none transition-all duration-300">
+                                <!-- Manial Qibly Box -->
+                                <div class="bg-surface-container-low rounded-xl p-md border border-outline-variant/30 hover:shadow-md transition-shadow">
+                                    <div class="flex items-center justify-between mb-md pb-sm border-b border-outline-variant/50">
+                                        <div class="flex items-center gap-sm">
+                                            <span class="material-symbols-outlined text-secondary text-[28px]">cloud_download</span>
+                                            <h3 class="font-bold text-lg text-on-surface">منيل القبلي</h3>
+                                        </div>
+                                        <span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded text-xs font-bold">فرع فرعي</span>
+                                    </div>
+                                    <div class="space-y-sm">
+                                        <!-- Dept -->
+                                        <label class="flex items-center justify-between p-3 bg-background rounded-lg cursor-pointer transition-colors border border-transparent">
+                                            <div class="flex items-center gap-3">
+                                                <input type="radio" name="department" class="w-4 h-4 text-primary bg-background border-outline-variant" disabled>
+                                                <div>
+                                                    <span class="font-bold text-on-surface block">قسم العظام</span>
+                                                    <span class="text-xs text-on-surface-variant">متاح: ٥ أماكن</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-24 bg-surface-variant h-1.5 rounded-full overflow-hidden">
+                                                <div class="bg-primary h-full rounded-full" style="width: 75%"></div>
+                                            </div>
+                                        </label>
+                                        <!-- Dept -->
+                                        <label class="flex items-center justify-between p-3 bg-background rounded-lg cursor-pointer transition-colors border border-transparent">
+                                            <div class="flex items-center gap-3">
+                                                <input type="radio" name="department" class="w-4 h-4 text-primary bg-background border-outline-variant" disabled data-full="true">
+                                                <div>
+                                                    <span class="font-bold text-on-surface block">قسم الأعصاب</span>
+                                                    <span class="text-xs text-error font-bold">مكتمل (٣٠ مسجل)</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-24 bg-surface-variant h-1.5 rounded-full overflow-hidden">
+                                                <div class="bg-error h-full rounded-full" style="width: 100%"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Manial Bahri Box -->
+                                <div class="bg-surface-container-low rounded-xl p-md border border-outline-variant/30 hover:shadow-md transition-shadow">
+                                    <div class="flex items-center justify-between mb-md pb-sm border-b border-outline-variant/50">
+                                        <div class="flex items-center gap-sm">
+                                            <span class="material-symbols-outlined text-secondary text-[28px]">water_lux</span>
+                                            <h3 class="font-bold text-lg text-on-surface">منيل البحري</h3>
+                                        </div>
+                                        <span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded text-xs font-bold">فرع فرعي</span>
+                                    </div>
+                                    <div class="space-y-sm">
+                                        <!-- Dept -->
+                                        <label class="flex items-center justify-between p-3 bg-background rounded-lg cursor-pointer transition-colors border border-transparent">
+                                            <div class="flex items-center gap-3">
+                                                <input type="radio" name="department" class="w-4 h-4 text-primary bg-background border-outline-variant" disabled>
+                                                <div>
+                                                    <span class="font-bold text-on-surface block">قسم الأطفال</span>
+                                                    <span class="text-xs text-on-surface-variant">متاح: ١٠ أماكن</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-24 bg-surface-variant h-1.5 rounded-full overflow-hidden">
+                                                <div class="bg-secondary h-full rounded-full" style="width: 33%"></div>
+                                            </div>
+                                        </label>
+                                        <!-- Dept -->
+                                        <label class="flex items-center justify-between p-3 bg-background rounded-lg cursor-pointer transition-colors border border-transparent">
+                                            <div class="flex items-center gap-3">
+                                                <input type="radio" name="department" class="w-4 h-4 text-primary bg-background border-outline-variant" disabled data-full="true">
+                                                <div>
+                                                    <span class="font-bold text-on-surface block">قسم القلب</span>
+                                                    <span class="text-xs text-error font-bold">مكتمل (١٠ مسجل)</span>
+                                                </div>
+                                            </div>
+                                            <div class="w-24 bg-surface-variant h-1.5 rounded-full overflow-hidden">
+                                                <div class="bg-error h-full rounded-full" style="width: 100%"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Decorative Illustration Section -->
+                <div class="w-full h-48 rounded-2xl overflow-hidden relative group mt-md">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-l from-primary/80 to-transparent z-10 flex items-center px-lg">
+                        <div class="flex flex-col gap-xs text-on-primary max-w-lg">
+                            <span class="font-label-md text-label-md uppercase tracking-widest opacity-80">رسالة
+                                الكلية</span>
+                            <h3 class="font-headline-md text-headline-md">نحن هنا لإعداد كوادر طبية بمقاييس عالمية</h3>
+                            <p class="font-body-md text-body-md opacity-90">الامتياز هو الخطوة الأولى نحو مستقبل مهني
+                                مرموق في رحاب قصر العيني العريق.</p>
+                        </div>
+                    </div>
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="A cinematic, low-angle architectural photograph of the historic Cairo University main dome and buildings at dusk. The lighting is warm and prestigious with deep blues and golden ambers. In the foreground, a modern medical facility blurred slightly to represent the blend of heritage and modern medical science. High contrast, professional academic atmosphere."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD63JtDAdxzJFby_5mgLLpynzoeROMQbVK4BryD5G7Fh0cyAfRafsoxfknTfhohmb5qh5dlcRImSTRqvo7W_s0aX4arQuVoBmWM-gp5fBxa8UcdWif_DWHKc1pc3nOVPNvL4PSjE9dc05qD7XezsXJzwr9S1NUZ0yes3dcjl0QRUdtGLWQP-L02mAm-WdLma4slxgI3oPrzRuvNLj7JzNDgl29jrvlISUrc4BkYUJcDAP9rZexC0e8X" />
+                </div>
+            </div>
+            <script>
+                // Micro-interaction: Update progress bar on file input
+                const fileInputs = document.querySelectorAll('input[type="file"]');
+                const progressBar = document.getElementById('status-progress-bar');
+                const progressText = document.getElementById('status-progress-text');
+
+                let uploadedCount = 0;
+
+                fileInputs.forEach(input => {
+                    input.addEventListener('change', (e) => {
+                        if (e.target.files.length > 0) {
+                            const parent = e.target.closest('.border-dashed');
+                            parent.classList.remove('border-outline-variant');
+                            parent.classList.add('border-secondary', 'bg-secondary/5');
+                            parent.querySelector('.material-symbols-outlined').classList.add('text-secondary');
+                            parent.querySelector('.text-outline').innerText = 'تم رفع الملف: ' + e.target.files[0].name;
+                            parent.querySelector('.text-outline').classList.add('text-secondary');
+
+                            uploadedCount++;
+                            const newProgress = 35 + (uploadedCount * 15);
+                            progressBar.style.width = newProgress + '%';
+                            progressText.innerText = newProgress + '%';
+
+                            if (newProgress > 50) {
+                                progressBar.classList.remove('bg-error');
+                                progressBar.classList.add('bg-secondary');
+                            }
+                        }
+                    });
+                });
+
+                // Duration Button Selection
+                const durationBtns = document.querySelectorAll('button[type="button"]');
+                durationBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        durationBtns.forEach(b => {
+                            b.classList.remove('bg-primary-container', 'text-on-primary-container', 'border-primary-container');
+                            b.classList.add('bg-transparent', 'text-on-surface-variant', 'border-outline-variant');
+                        });
+                        btn.classList.add('bg-primary-container', 'text-on-primary-container', 'border-primary-container');
+                        btn.classList.remove('bg-transparent', 'text-on-surface-variant', 'border-outline-variant');
+                    });
+                });
+
+                // Demo Activation Toggle
+                const toggle = document.getElementById('demo-activation-toggle');
+                const toggleBg = document.getElementById('toggle-bg');
+                const toggleDot = document.getElementById('toggle-dot');
+                
+                const statusPill = document.getElementById('status-pill');
+                const statusIcon = document.getElementById('status-icon');
+                const statusText = document.getElementById('status-text');
+                const statusDesc = document.getElementById('status-desc');
+                
+                const statusCard = document.getElementById('status-card');
+                const statusBadge = document.getElementById('status-badge');
+                const statusProgressText = document.getElementById('status-progress-text');
+                const statusProgressBar = document.getElementById('status-progress-bar');
+                const statusMsg = document.getElementById('status-msg');
+                
+                const lockedOverlay = document.getElementById('locked-overlay');
+                const departmentsGrid = document.getElementById('departments-grid');
+                const radioInputs = document.querySelectorAll('input[type="radio"]');
+
+                toggle.addEventListener('change', (e) => {
+                    const isActive = e.target.checked;
+                    
+                    if (isActive) {
+                        // Toggle UI
+                        toggleBg.classList.replace('bg-outline-variant', 'bg-primary');
+                        // Use negative translate for RTL
+                        toggleDot.classList.add('-translate-x-4');
+                        
+                        // Top Pill
+                        statusPill.classList.replace('bg-error-container', 'bg-primary-container');
+                        statusPill.classList.replace('text-on-error-container', 'text-on-primary-container');
+                        statusPill.classList.remove('animate-pulse');
+                        statusIcon.textContent = 'check_circle';
+                        statusText.textContent = 'الحساب مفعل وجاهز';
+                        statusDesc.textContent = 'يمكنك الآن تسجيل رغباتك واختيار القسم التدريبي المناسب لك في المستشفيات المتاحة.';
+                        
+                        // Status Card
+                        statusCard.classList.replace('border-error', 'border-primary');
+                        statusBadge.classList.replace('text-error', 'text-primary');
+                        statusBadge.classList.replace('bg-error/10', 'bg-primary/10');
+                        statusBadge.textContent = 'نشط';
+                        statusProgressText.textContent = '100%';
+                        statusProgressBar.style.width = '100%';
+                        statusProgressBar.classList.replace('bg-error', 'bg-primary');
+                        statusMsg.textContent = 'تم مراجعة المستندات وتفعيل حسابك بنجاح.';
+                        
+                        // Unlock Departments
+                        lockedOverlay.classList.add('opacity-0', 'pointer-events-none');
+                        setTimeout(() => lockedOverlay.classList.add('hidden'), 300);
+                        departmentsGrid.classList.remove('opacity-40', 'grayscale', 'pointer-events-none');
+                        
+                        // Enable Radios
+                        radioInputs.forEach(radio => radio.removeAttribute('disabled'));
+                    } else {
+                        // Toggle UI
+                        toggleBg.classList.replace('bg-primary', 'bg-outline-variant');
+                        toggleDot.classList.remove('-translate-x-4');
+                        
+                        // Top Pill
+                        statusPill.classList.replace('bg-primary-container', 'bg-error-container');
+                        statusPill.classList.replace('text-on-primary-container', 'text-on-error-container');
+                        statusPill.classList.add('animate-pulse');
+                        statusIcon.textContent = 'warning';
+                        statusText.textContent = 'الحساب غير مفعل حالياً';
+                        statusDesc.textContent = 'يرجى استكمال رفع المستندات المطلوبة لتفعيل حسابك والبدء في اختيار التخصصات المتاحة للتدريب العملي في مستشفيات قصر العيني.';
+                        
+                        // Status Card
+                        statusCard.classList.replace('border-primary', 'border-error');
+                        statusBadge.classList.replace('text-primary', 'text-error');
+                        statusBadge.classList.replace('bg-primary/10', 'bg-error/10');
+                        statusBadge.textContent = 'غير نشط';
+                        statusProgressText.textContent = '35%';
+                        statusProgressBar.style.width = '35%';
+                        statusProgressBar.classList.replace('bg-primary', 'bg-error');
+                        statusMsg.textContent = 'بانتظار مراجعة المستندات من قبل الإدارة المركزية.';
+                        
+                        // Lock Departments
+                        lockedOverlay.classList.remove('hidden');
+                        setTimeout(() => lockedOverlay.classList.remove('opacity-0'), 10);
+                        departmentsGrid.classList.add('opacity-40', 'grayscale', 'pointer-events-none');
+                        
+                        // Disable Radios
+                        radioInputs.forEach(radio => {
+                            radio.setAttribute('disabled', 'true');
+                            radio.checked = false;
+                        });
+                    }
+                });
+
+                // Toast Notification Logic
+                const toastContainer = document.createElement('div');
+                toastContainer.id = 'toast';
+                toastContainer.className = 'fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-lg font-bold text-sm transform transition-all duration-300 translate-y-20 opacity-0 z-50 flex items-center gap-2 pointer-events-none';
+                toastContainer.innerHTML = `
+                    <span class="material-symbols-outlined text-[20px]" id="toast-icon">info</span>
+                    <span id="toast-message"></span>
+                `;
+                document.body.appendChild(toastContainer);
+
+                const toast = document.getElementById('toast');
+                const toastIcon = document.getElementById('toast-icon');
+                const toastMessage = document.getElementById('toast-message');
+                let toastTimeout;
+
+                function showToast(message, type = 'success') {
+                    toastMessage.textContent = message;
+                    if (type === 'success') {
+                        toast.className = "fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-xl transform transition-all duration-300 z-50 flex items-center gap-2 pointer-events-none bg-primary text-on-primary";
+                        toastIcon.textContent = 'check_circle';
+                    } else if (type === 'error') {
+                        toast.className = "fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-3 rounded-full shadow-xl transform transition-all duration-300 z-50 flex items-center gap-2 pointer-events-none bg-error text-on-error";
+                        toastIcon.textContent = 'error';
+                    }
+                    
+                    // Show
+                    toast.classList.remove('translate-y-20', 'opacity-0');
+                    toast.classList.add('translate-y-0', 'opacity-100');
+
+                    clearTimeout(toastTimeout);
+                    toastTimeout = setTimeout(() => {
+                        toast.classList.remove('translate-y-0', 'opacity-100');
+                        toast.classList.add('translate-y-20', 'opacity-0');
+                    }, 3000);
+                }
+
+                // Radio Choice Logic
+                radioInputs.forEach(radio => {
+                    radio.addEventListener('click', (e) => {
+                        // Check if parent label has disabled or if radio itself is full
+                        if (radio.getAttribute('data-full') === 'true') {
+                            e.preventDefault();
+                            showToast('عفواً، هذا القسم مكتمل السعة ولا يمكن تسجيل الرغبة به.', 'error');
+                        } else {
+                            // Show success message
+                            showToast('تم اختيار القسم التدريبي بنجاح!', 'success');
+                        }
+                    });
+                });
+            </script>
+        </main>
+    </div>
+</body>
+
+</html>

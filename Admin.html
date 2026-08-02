@@ -1,0 +1,676 @@
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+                font-family: "Source Sans 3", sans-serif;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { theme: { extend: { "colors": { "background": "#f8f9ff", "surface-tint": "#465f88", "surface-container-high": "#dce9ff", "primary-fixed": "#d6e3ff", "surface-bright": "#f8f9ff", "tertiary-fixed": "#ffdbcb", "on-secondary-container": "#006e6e", "inverse-on-surface": "#eaf1ff", "on-tertiary": "#ffffff", "on-tertiary-container": "#b97958", "secondary": "#006a6a", "secondary-fixed": "#93f2f2", "secondary-fixed-dim": "#76d6d5", "on-primary-fixed": "#001b3d", "surface-variant": "#d3e4fe", "inverse-surface": "#213145", "outline": "#74777f", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#004f4f", "secondary-container": "#90efef", "primary-fixed-dim": "#aec7f6", "tertiary-container": "#3d1500", "surface": "#f8f9ff", "error": "#ba1a1a", "on-background": "#0b1c30", "inverse-primary": "#aec7f6", "surface-dim": "#cbdbf5", "on-primary-container": "#708ab5", "surface-container": "#e5eeff", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-secondary-fixed": "#002020", "on-surface-variant": "#44474e", "primary-container": "#002147", "on-tertiary-fixed": "#341100", "on-error": "#ffffff", "outline-variant": "#c4c6cf", "on-tertiary-fixed-variant": "#6c391d", "primary": "#000a1e", "on-primary-fixed-variant": "#2d476f", "surface-container-lowest": "#ffffff", "on-surface": "#0b1c30", "tertiary": "#180500", "tertiary-fixed-dim": "#ffb691", "surface-container-low": "#eff4ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "16px", "xl": "80px", "lg": "48px", "sm": "12px", "base": "8px", "xs": "4px", "margin-desktop": "64px", "gutter": "24px", "md": "24px" }, "fontFamily": { "headline-lg": ["\"Source Serif 4\""], "display-lg": ["\"Source Serif 4\""], "headline-md": ["\"Source Serif 4\""], "body-lg": ["\"Source Sans 3\""], "label-md": ["\"Source Sans 3\""], "body-md": ["\"Source Sans 3\""], "headline-lg-mobile": ["\"Source Serif 4\""] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface">
+    <aside
+        class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col border-l border-outline-variant shadow-lg">
+        <div class="p-6 flex flex-col items-center gap-4 border-b border-outline-variant mb-6"><img alt="Logo"
+                class="h-16 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuApBXQuXn7-aJhtKkcM6vEnE_kEQ_a-0bXaZ11hnVyMibb4KWyFMhmB0g7Iwq1XRKoWa24xteOaNbWY-QI0TxpMewcTHvxOHy9pbmU92-iZUVSmlNKbhmgLhTR5xKLEbXSZ_EvLuArQvFQqG5kmXoObEbFJpL8LRbhvdwPq1YE7E2U_oa7V4WUnXThekTBXD5nvBvzTs5dkeOamj3ulb9TTXQ2SP5r--95ryq9EgXgJMqsoE-U9qKfH" />
+        </div>
+        <nav class="flex-1 px-4 space-y-2"
+            data-active-classes="bg-primary-container text-on-primary-container font-bold"><a
+                class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-all gap-4"
+                data-path="home" href="index.html"><span class="material-symbols-outlined">home</span><span>الرئيسية</span></a><a
+                class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-all gap-4"
+                data-path="student-dashboard" href="Student.html"><span class="material-symbols-outlined">person</span><span>لوحة
+                    تحكم الطالب</span></a><a aria-current="page"
+                class="flex items-center px-4 py-3 rounded-xl transition-all gap-4 bg-primary-container text-on-primary-container font-bold"
+                data-path="admin-dashboard" href="Admin.html"><span
+                    class="material-symbols-outlined">admin_panel_settings</span><span>لوحة تحكم المسؤول</span></a><a
+                class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container-high transition-all gap-4"
+                data-path="register" href="register.html"><span
+                    class="material-symbols-outlined">app_registration</span><span>التسجيل</span></a></nav>
+    </aside>
+    <div class="pr-72">
+        <header
+            class="fixed top-0 left-0 right-72 h-16 bg-surface/80 backdrop-blur-xl border-b border-outline-variant z-40 flex items-center justify-between px-md">
+            <div class="flex items-center gap-4">
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span
+                    class="text-label-md text-on-surface-variant">مرحباً بك، د. أحمد علي</span>
+            </div>
+            <div class="flex items-center gap-md"><span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer">notifications</span><span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer">search</span></div>
+        </header>
+        <main class="relative pt-16 bg-background min-h-screen p-md">
+            <div class="flex flex-col w-full gap-gutter">
+                <!-- Header Summary & Stats -->
+                <section class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-md">
+                    <div class="bg-surface-container-lowest p-lg rounded-xl shadow-sm relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <p class="text-label-md font-label-md text-on-surface-variant mb-xs">إجمالي الطلاب المسجلين
+                            </p>
+                            <h3 class="text-display-lg font-display-lg text-primary tracking-tight">١,٢٤٠</h3>
+                            <div class="flex items-center gap-xs text-secondary mt-sm">
+                                <span class="material-symbols-outlined text-[18px]">trending_up</span>
+                                <span class="text-label-md font-label-md">+١٢٪ هذا الشهر</span>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -right-4 -bottom-4 opacity-5 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-[120px]">groups</span>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-lowest p-lg rounded-xl shadow-sm relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <p class="text-label-md font-label-md text-on-surface-variant mb-xs">طلبات قيد المراجعة</p>
+                            <h3 class="text-display-lg font-display-lg text-tertiary-fixed-dim tracking-tight">٨٥</h3>
+                            <div class="flex items-center gap-xs text-on-tertiary-fixed-variant mt-sm">
+                                <span class="material-symbols-outlined text-[18px]">pending_actions</span>
+                                <span class="text-label-md font-label-md">تطلب تدخل فوري</span>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -right-4 -bottom-4 opacity-5 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-[120px]">description</span>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-lowest p-lg rounded-xl shadow-sm relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <p class="text-label-md font-label-md text-on-surface-variant mb-xs">القدرة الاستيعابية
+                                النشطة</p>
+                            <h3 class="text-display-lg font-display-lg text-secondary tracking-tight">٧٨٪</h3>
+                            <div class="w-full bg-surface-container h-1.5 rounded-full mt-sm">
+                                <div class="bg-secondary h-full rounded-full transition-all duration-1000"
+                                    style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -right-4 -bottom-4 opacity-5 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-[120px]">pie_chart</span>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- ======== HIERARCHY MANAGER ======== -->
+                <div class="flex flex-col gap-gutter">
+
+                    <!-- Top Bar: Active Category Breadcrumb + Add Category -->
+                    <div class="flex flex-wrap items-center justify-between gap-md bg-surface-container-lowest p-md rounded-xl shadow-sm border border-outline-variant/30">
+                        <div class="flex items-center gap-sm flex-wrap" id="breadcrumb">
+                            <span class="text-label-md text-on-surface-variant font-label-md">إدارة الهيكل التدريبي</span>
+                            <span class="material-symbols-outlined text-outline text-[16px]">chevron_left</span>
+                            <span class="text-label-md text-primary font-bold" id="active-cat-label">اختر فئة</span>
+                            <span class="material-symbols-outlined text-outline text-[16px]" id="branch-chevron" style="display:none">chevron_left</span>
+                            <span class="text-label-md text-secondary font-bold" id="active-branch-label"></span>
+                        </div>
+                        <button onclick="openModal('modal-add-category')"
+                            class="bg-primary text-on-primary px-lg py-sm rounded-full flex items-center gap-sm hover:opacity-90 transition-all text-label-md font-label-md shadow-md">
+                            <span class="material-symbols-outlined text-[20px]">add</span>
+                            إضافة فئة جديدة
+                        </button>
+                    </div>
+
+                    <!-- LEVEL 1: Categories Row (Tabs) -->
+                    <div>
+                        <p class="text-label-md font-bold text-on-surface-variant mb-sm uppercase tracking-widest">الفئات</p>
+                        <div class="flex flex-wrap gap-sm" id="categories-container">
+                            <!-- Category: امتياز -->
+                            <button onclick="selectCategory(this, 'امتياز')"
+                                class="cat-btn active-cat px-lg py-sm rounded-full border-2 border-primary bg-primary text-on-primary font-bold text-label-md flex items-center gap-sm transition-all shadow">
+                                <span class="material-symbols-outlined text-[18px]">local_hospital</span>
+                                امتياز
+                                <span onclick="event.stopPropagation(); confirmDelete('فئة','امتياز')" class="material-symbols-outlined text-[14px] opacity-60 hover:opacity-100 mr-1">close</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- LEVEL 2: Branches (Hospital Cards) -->
+                    <div id="branches-section">
+                        <div class="flex items-center justify-between mb-sm">
+                            <p class="text-label-md font-bold text-on-surface-variant uppercase tracking-widest">الفروع — <span class="text-primary" id="branches-cat-name">امتياز</span></p>
+                            <button onclick="openModal('modal-add-branch')"
+                                class="bg-secondary text-on-secondary px-md py-xs rounded-full flex items-center gap-xs hover:opacity-90 transition-all text-label-md font-label-md shadow-sm">
+                                <span class="material-symbols-outlined text-[18px]">add</span>
+                                إضافة فرع
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter" id="branches-container">
+
+                            <!-- Branch Card: منيل القبلي -->
+                            <div class="branch-card bg-surface-container-lowest rounded-2xl shadow-sm border-2 border-outline-variant/30 overflow-hidden flex flex-col transition-all hover:shadow-xl hover:border-primary/30 group"
+                                data-branch="منيل القبلي">
+                                <!-- Card Header -->
+                                <div class="bg-gradient-to-l from-secondary-container/30 to-transparent px-lg py-md flex items-center justify-between border-b border-outline-variant/30">
+                                    <div class="flex items-center gap-sm">
+                                        <div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center shadow">
+                                            <span class="material-symbols-outlined text-on-secondary text-[20px]">account_balance</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-headline-md font-headline-md text-on-surface leading-tight">منيل القبلي</h3>
+                                            <p class="text-xs text-on-surface-variant">فرعي</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-xs">
+                                        <span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full text-label-md font-bold text-xs">٢ قسم</span>
+                                        <button onclick="confirmDelete('فرع','منيل القبلي')" class="material-symbols-outlined text-outline hover:text-error text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">delete</button>
+                                    </div>
+                                </div>
+
+                                <!-- Departments list inside this branch -->
+                                <div class="flex flex-col gap-xs p-md flex-1" id="depts-منيل القبلي">
+                                    <!-- Dept row -->
+                                    <div onclick="openDeptDetails('قسم العظام', 20, 15)" class="cursor-pointer flex items-center justify-between px-md py-sm bg-background rounded-xl hover:bg-surface-container transition-colors dept-row group/dept">
+                                        <div class="flex items-center gap-sm">
+                                            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                                            <span class="text-body-md text-on-surface font-bold">قسم العظام</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                            <span class="text-xs text-on-surface-variant bg-surface-container px-sm py-xs rounded-full">١٥ / ٢٠</span>
+                                            <button onclick="event.stopPropagation(); confirmDelete('قسم','قسم العظام')" class="material-symbols-outlined text-[16px] text-outline hover:text-error opacity-0 group-hover/dept:opacity-100 transition-opacity">close</button>
+                                        </div>
+                                    </div>
+                                    <div onclick="openDeptDetails('قسم الأعصاب', 30, 28)" class="cursor-pointer flex items-center justify-between px-md py-sm bg-background rounded-xl hover:bg-surface-container transition-colors dept-row group/dept">
+                                        <div class="flex items-center gap-sm">
+                                            <span class="w-2 h-2 rounded-full bg-error"></span>
+                                            <span class="text-body-md text-on-surface font-bold">قسم الأعصاب</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                            <span class="text-xs text-on-surface-variant bg-surface-container px-sm py-xs rounded-full">٢٨ / ٣٠</span>
+                                            <button onclick="event.stopPropagation(); confirmDelete('قسم','قسم الأعصاب')" class="material-symbols-outlined text-[16px] text-outline hover:text-error opacity-0 group-hover/dept:opacity-100 transition-opacity">close</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Add Dept Button -->
+                                <div class="px-md pb-md">
+                                    <button onclick="openAddDept('منيل القبلي')"
+                                        class="w-full flex items-center justify-center gap-xs py-sm border-2 border-dashed border-outline-variant rounded-xl text-label-md text-on-surface-variant hover:border-secondary hover:text-secondary transition-all">
+                                        <span class="material-symbols-outlined text-[18px]">add</span>
+                                        إضافة قسم
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Branch Card: منيل البحري -->
+                            <div class="branch-card bg-surface-container-lowest rounded-2xl shadow-sm border-2 border-outline-variant/30 overflow-hidden flex flex-col transition-all hover:shadow-xl hover:border-secondary/30 group"
+                                data-branch="منيل البحري">
+                                <div class="bg-gradient-to-l from-secondary-container/30 to-transparent px-lg py-md flex items-center justify-between border-b border-outline-variant/30">
+                                    <div class="flex items-center gap-sm">
+                                        <div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center shadow">
+                                            <span class="material-symbols-outlined text-on-secondary text-[20px]">water</span>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-headline-md font-headline-md text-on-surface leading-tight">منيل البحري</h3>
+                                            <p class="text-xs text-on-surface-variant">فرعي</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-xs">
+                                        <span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full text-label-md font-bold text-xs">٢ قسم</span>
+                                        <button onclick="confirmDelete('فرع','منيل البحري')" class="material-symbols-outlined text-outline hover:text-error text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">delete</button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-xs p-md flex-1" id="depts-منيل البحري">
+                                    <div class="flex items-center justify-between px-md py-sm bg-background rounded-xl hover:bg-surface-container transition-colors dept-row group/dept">
+                                        <div class="flex items-center gap-sm">
+                                            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                                            <span class="text-body-md text-on-surface font-bold">قسم الأطفال</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                            <span class="text-xs text-on-surface-variant bg-surface-container px-sm py-xs rounded-full">٥ / ١٥</span>
+                                            <button onclick="confirmDelete('قسم','قسم الأطفال')" class="material-symbols-outlined text-[16px] text-outline hover:text-error opacity-0 group-hover/dept:opacity-100 transition-opacity">close</button>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between px-md py-sm bg-background rounded-xl hover:bg-surface-container transition-colors dept-row group/dept">
+                                        <div class="flex items-center gap-sm">
+                                            <span class="w-2 h-2 rounded-full bg-error"></span>
+                                            <span class="text-body-md text-on-surface font-bold">قسم القلب</span>
+                                        </div>
+                                        <div class="flex items-center gap-sm">
+                                            <span class="text-xs text-on-surface-variant bg-surface-container px-sm py-xs rounded-full">١٠ / ١٠</span>
+                                            <button onclick="confirmDelete('قسم','قسم القلب')" class="material-symbols-outlined text-[16px] text-outline hover:text-error opacity-0 group-hover/dept:opacity-100 transition-opacity">close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-md pb-md">
+                                    <button onclick="openAddDept('منيل البحري')"
+                                        class="w-full flex items-center justify-center gap-xs py-sm border-2 border-dashed border-outline-variant rounded-xl text-label-md text-on-surface-variant hover:border-secondary hover:text-secondary transition-all">
+                                        <span class="material-symbols-outlined text-[18px]">add</span>
+                                        إضافة قسم
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Add New Branch Card -->
+                            <button onclick="openModal('modal-add-branch')"
+                                class="flex flex-col items-center justify-center gap-md min-h-[220px] border-2 border-dashed border-outline-variant rounded-2xl text-on-surface-variant hover:border-primary hover:text-primary hover:bg-primary/5 transition-all group">
+                                <div class="w-14 h-14 rounded-full bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all">
+                                    <span class="material-symbols-outlined text-[28px]">add_home_work</span>
+                                </div>
+                                <span class="text-label-md font-bold">إضافة فرع جديد</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!-- LEVEL 3: Students Applications Table (always visible) -->
+                    <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden border border-outline-variant/20">
+                        <div class="p-lg border-b border-outline-variant flex flex-wrap items-center justify-between gap-sm">
+                            <h3 class="text-headline-md font-headline-md text-on-surface">مراجعة طلبات الالتحاق</h3>
+                            <div class="relative">
+                                <input class="pr-10 pl-4 py-2 bg-background border border-outline-variant rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="بحث باسم الطالب..." type="text" />
+                                <span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-right border-collapse">
+                                <thead>
+                                    <tr class="bg-surface-container-low text-on-surface-variant">
+                                        <th class="px-lg py-md font-label-md text-label-md">اسم الطالب</th>
+                                        <th class="px-lg py-md font-label-md text-label-md">المستندات</th>
+                                        <th class="px-lg py-md font-label-md text-label-md">المدة المطلوبة</th>
+                                        <th class="px-lg py-md font-label-md text-label-md">تاريخ الطلب</th>
+                                        <th class="px-lg py-md font-label-md text-label-md">الإجراءات</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-outline-variant/30">
+                                    <tr class="hover:bg-surface-container-high transition-colors">
+                                        <td class="px-lg py-md">
+                                            <div class="flex items-center gap-sm">
+                                                <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold">ي</div>
+                                                <div>
+                                                    <div class="text-body-md font-bold text-on-surface">ياسين محمد علي</div>
+                                                    <div class="text-xs text-on-surface-variant">جامعة القاهرة</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-lg py-md">
+                                            <button class="flex items-center gap-xs text-primary hover:underline">
+                                                <span class="material-symbols-outlined text-[18px]">attach_file</span>
+                                                <span class="text-label-md">٤ ملفات PDF</span>
+                                            </button>
+                                        </td>
+                                        <td class="px-lg py-md text-on-surface-variant">٣ أشهر</td>
+                                        <td class="px-lg py-md text-on-surface-variant">٢٠٢٣/١٠/١٥</td>
+                                        <td class="px-lg py-md">
+                                            <div class="flex items-center gap-sm">
+                                                <button class="bg-primary text-on-primary px-sm py-1.5 rounded-lg text-xs font-bold hover:brightness-110">تفعيل</button>
+                                                <button class="bg-surface-container text-on-surface-variant px-sm py-1.5 rounded-lg text-xs font-bold hover:bg-outline-variant">تعديل المدة</button>
+                                                <button class="text-error px-xs py-1.5 text-xs font-bold hover:bg-error-container/20 rounded">رفض</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-surface-container-high transition-colors">
+                                        <td class="px-lg py-md">
+                                            <div class="flex items-center gap-sm">
+                                                <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold">ل</div>
+                                                <div>
+                                                    <div class="text-body-md font-bold text-on-surface">ليلى حسن الشريف</div>
+                                                    <div class="text-xs text-on-surface-variant">جامعة الملك سعود</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-lg py-md">
+                                            <button class="flex items-center gap-xs text-primary hover:underline">
+                                                <span class="material-symbols-outlined text-[18px]">attach_file</span>
+                                                <span class="text-label-md">٣ ملفات PDF</span>
+                                            </button>
+                                        </td>
+                                        <td class="px-lg py-md text-on-surface-variant">٦ أشهر</td>
+                                        <td class="px-lg py-md text-on-surface-variant">٢٠٢٣/١٠/١٤</td>
+                                        <td class="px-lg py-md">
+                                            <div class="flex items-center gap-sm">
+                                                <button class="bg-primary text-on-primary px-sm py-1.5 rounded-lg text-xs font-bold hover:brightness-110">تفعيل</button>
+                                                <button class="bg-surface-container text-on-surface-variant px-sm py-1.5 rounded-lg text-xs font-bold hover:bg-outline-variant">تعديل المدة</button>
+                                                <button class="text-error px-xs py-1.5 text-xs font-bold hover:bg-error-container/20 rounded">رفض</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="p-md bg-surface-container-low flex justify-center">
+                            <button class="text-primary text-label-md font-bold hover:underline">عرض جميع الطلبات (١٤٢)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======== MODALS ======== -->
+
+                <!-- Modal: Add Category -->
+                <div id="modal-add-category" class="fixed inset-0 z-[100] hidden items-center justify-center">
+                    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeModal('modal-add-category')"></div>
+                    <div class="relative bg-surface-container-lowest rounded-2xl shadow-2xl p-lg w-full max-w-sm mx-4 flex flex-col gap-md">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-headline-md font-headline-md text-primary">إضافة فئة جديدة</h3>
+                            <button onclick="closeModal('modal-add-category')" class="material-symbols-outlined text-outline hover:text-on-surface">close</button>
+                        </div>
+                        <div class="flex flex-col gap-sm">
+                            <label class="text-label-md font-label-md text-on-surface-variant">اسم الفئة</label>
+                            <input id="input-cat-name" type="text" placeholder="مثال: امتياز، تدريب صيفي..." class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-primary outline-none transition-colors" />
+                        </div>
+                        <div class="flex flex-col gap-sm">
+                            <label class="text-label-md font-label-md text-on-surface-variant">أيقونة (اختياري)</label>
+                            <select id="input-cat-icon" class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-primary outline-none appearance-none">
+                                <option value="local_hospital">🏥 مستشفى</option>
+                                <option value="wb_sunny">☀️ تدريب صيفي</option>
+                                <option value="school">🎓 تعليمي</option>
+                                <option value="science">🔬 بحثي</option>
+                            </select>
+                        </div>
+                        <button onclick="addCategory()" class="w-full bg-primary text-on-primary py-md rounded-xl font-bold text-label-md hover:opacity-90 transition-all flex items-center justify-center gap-sm">
+                            <span class="material-symbols-outlined">add</span> إضافة الفئة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal: Add Branch -->
+                <div id="modal-add-branch" class="fixed inset-0 z-[100] hidden items-center justify-center">
+                    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeModal('modal-add-branch')"></div>
+                    <div class="relative bg-surface-container-lowest rounded-2xl shadow-2xl p-lg w-full max-w-sm mx-4 flex flex-col gap-md">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-headline-md font-headline-md text-secondary">إضافة فرع جديد</h3>
+                            <button onclick="closeModal('modal-add-branch')" class="material-symbols-outlined text-outline hover:text-on-surface">close</button>
+                        </div>
+                        <div class="flex flex-col gap-sm">
+                            <label class="text-label-md font-label-md text-on-surface-variant">اسم الفرع / المستشفى</label>
+                            <input id="input-branch-name" type="text" placeholder="مثال: منيل البحري، مستشفى الدمرداش..." class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-secondary outline-none transition-colors" />
+                        </div>
+                        <div class="flex flex-col gap-sm">
+                            <label class="text-label-md font-label-md text-on-surface-variant">النوع</label>
+                            <select id="input-branch-type" class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-secondary outline-none appearance-none">
+                                <option value="رئيسي">رئيسي</option>
+                                <option value="فرعي">فرعي</option>
+                            </select>
+                        </div>
+                        <button onclick="addBranch()" class="w-full bg-secondary text-on-secondary py-md rounded-xl font-bold text-label-md hover:opacity-90 transition-all flex items-center justify-center gap-sm">
+                            <span class="material-symbols-outlined">add_home_work</span> إضافة الفرع
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal: Add Department -->
+                <div id="modal-add-dept" class="fixed inset-0 z-[100] hidden items-center justify-center">
+                    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeModal('modal-add-dept')"></div>
+                    <div class="relative bg-surface-container-lowest rounded-2xl shadow-2xl p-lg w-full max-w-sm mx-4 flex flex-col gap-md">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="text-headline-md font-headline-md text-on-surface">إضافة قسم</h3>
+                                <p class="text-label-md text-on-surface-variant mt-xs">إلى: <span id="modal-dept-branch" class="text-secondary font-bold"></span></p>
+                            </div>
+                            <button onclick="closeModal('modal-add-dept')" class="material-symbols-outlined text-outline hover:text-on-surface">close</button>
+                        </div>
+                        <div class="flex flex-col gap-sm">
+                            <label class="text-label-md font-label-md text-on-surface-variant">اسم القسم</label>
+                            <input id="input-dept-name" type="text" placeholder="مثال: قسم الأعصاب..." class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-on-secondary-container outline-none transition-colors" />
+                        </div>
+                        <div class="grid grid-cols-2 gap-sm">
+                            <div class="flex flex-col gap-xs">
+                                <label class="text-label-md font-label-md text-on-surface-variant">السعة الكلية</label>
+                                <input id="input-dept-capacity" type="number" min="1" placeholder="٢٠" class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-on-secondary-container outline-none" />
+                            </div>
+                            <div class="flex flex-col gap-xs">
+                                <label class="text-label-md font-label-md text-on-surface-variant">المسجلون حالياً</label>
+                                <input id="input-dept-enrolled" type="number" min="0" placeholder="٠" class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-on-secondary-container outline-none" />
+                            </div>
+                        </div>
+                        <button onclick="addDept()" class="w-full bg-on-secondary-container text-surface py-md rounded-xl font-bold text-label-md hover:opacity-90 transition-all flex items-center justify-center gap-sm">
+                            <span class="material-symbols-outlined">add</span> إضافة القسم
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal: Confirm Delete -->
+                <div id="modal-confirm-delete" class="fixed inset-0 z-[110] hidden items-center justify-center">
+                    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+                    <div class="relative bg-surface-container-lowest rounded-2xl shadow-2xl p-lg w-full max-w-sm mx-4 flex flex-col gap-md">
+                        <div class="w-14 h-14 rounded-full bg-error-container flex items-center justify-center mx-auto">
+                            <span class="material-symbols-outlined text-error text-[28px]">delete_forever</span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-headline-md font-headline-md text-on-surface">تأكيد الحذف</h3>
+                            <p class="text-body-md text-on-surface-variant mt-xs" id="delete-msg">هل تريد حذف هذا العنصر؟</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-sm">
+                            <button onclick="closeModal('modal-confirm-delete')" class="py-sm rounded-xl border-2 border-outline-variant text-on-surface-variant font-bold hover:bg-surface-container transition-all">إلغاء</button>
+                            <button onclick="closeModal('modal-confirm-delete')" class="py-sm rounded-xl bg-error text-on-error font-bold hover:opacity-90 transition-all">حذف</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal: Department Details -->
+                <div id="modal-dept-details" class="fixed inset-0 z-[100] hidden items-center justify-center">
+                    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeModal('modal-dept-details')"></div>
+                    <div class="relative bg-surface-container-lowest rounded-2xl shadow-2xl p-lg w-full max-w-lg mx-4 flex flex-col gap-md max-h-[90vh]">
+                        <div class="flex items-center justify-between border-b border-outline-variant/30 pb-sm">
+                            <div>
+                                <h3 id="details-dept-name" class="text-headline-md font-headline-md text-on-surface">تفاصيل القسم</h3>
+                                <p class="text-label-md text-on-surface-variant mt-xs">إدارة السعة والطلاب المسجلين</p>
+                            </div>
+                            <button onclick="closeModal('modal-dept-details')" class="material-symbols-outlined text-outline hover:text-on-surface">close</button>
+                        </div>
+                        
+                        <!-- Edit Capacity -->
+                        <div class="flex items-end gap-sm bg-surface-container p-sm rounded-xl">
+                            <div class="flex-1 flex flex-col gap-xs">
+                                <label class="text-label-md font-label-md text-on-surface-variant">السعة الكلية للقسم</label>
+                                <input id="details-dept-capacity" type="number" min="1" class="w-full px-md py-sm bg-background border-2 border-outline-variant rounded-xl text-body-md focus:border-primary outline-none transition-colors" />
+                            </div>
+                            <button onclick="saveDeptCapacity()" class="bg-primary text-on-primary px-lg py-sm rounded-xl font-bold text-label-md hover:opacity-90 transition-all h-[44px]">حفظ</button>
+                        </div>
+
+                        <!-- Students List -->
+                        <div class="flex flex-col gap-sm overflow-y-auto pr-sm" style="max-height: 300px;">
+                            <p class="text-label-md font-bold text-on-surface-variant tracking-widest mt-sm">الطلاب المسجلين (<span id="details-dept-enrolled">0</span>)</p>
+                            <div class="flex flex-col gap-xs" id="details-students-list">
+                                <!-- Dummy Students populated via JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                // ---- Modal helpers ----
+                function openModal(id) {
+                    const m = document.getElementById(id);
+                    m.classList.remove('hidden');
+                    m.classList.add('flex');
+                }
+                function closeModal(id) {
+                    const m = document.getElementById(id);
+                    m.classList.add('hidden');
+                    m.classList.remove('flex');
+                }
+
+                // ---- Category selection ----
+                function selectCategory(btn, name) {
+                    document.querySelectorAll('.cat-btn').forEach(b => {
+                        b.classList.remove('active-cat', 'bg-primary', 'text-on-primary', 'border-primary');
+                        b.classList.add('bg-surface', 'text-on-surface-variant', 'border-outline-variant');
+                    });
+                    btn.classList.add('active-cat', 'bg-primary', 'text-on-primary', 'border-primary');
+                    btn.classList.remove('bg-surface', 'text-on-surface-variant', 'border-outline-variant');
+                    document.getElementById('active-cat-label').textContent = name;
+                    document.getElementById('branches-cat-name').textContent = name;
+                }
+
+                // ---- Add Category ----
+                function addCategory() {
+                    const name = document.getElementById('input-cat-name').value.trim();
+                    const icon = document.getElementById('input-cat-icon').value;
+                    if (!name) { document.getElementById('input-cat-name').focus(); return; }
+                    const container = document.getElementById('categories-container');
+                    const btn = document.createElement('button');
+                    btn.className = 'cat-btn px-lg py-sm rounded-full border-2 border-outline-variant bg-surface text-on-surface-variant font-bold text-label-md flex items-center gap-sm transition-all hover:border-primary hover:text-primary';
+                    btn.innerHTML = `<span class="material-symbols-outlined text-[18px]">${icon}</span>${name}<span onclick="event.stopPropagation(); confirmDelete('فئة','${name}')" class="material-symbols-outlined text-[14px] opacity-60 hover:opacity-100 mr-1">close</span>`;
+                    btn.onclick = function() { selectCategory(this, name); };
+                    container.insertBefore(btn, container.lastElementChild);
+                    document.getElementById('input-cat-name').value = '';
+                    closeModal('modal-add-category');
+                }
+
+                // ---- Add Branch ----
+                function addBranch() {
+                    const name = document.getElementById('input-branch-name').value.trim();
+                    const type = document.getElementById('input-branch-type').value;
+                    if (!name) { document.getElementById('input-branch-name').focus(); return; }
+                    const container = document.getElementById('branches-container');
+                    const card = document.createElement('div');
+                    card.className = 'branch-card bg-surface-container-lowest rounded-2xl shadow-sm border-2 border-outline-variant/30 overflow-hidden flex flex-col transition-all hover:shadow-xl hover:border-primary/30 group';
+                    card.setAttribute('data-branch', name);
+                    const colors = type === 'رئيسي' ? { bg: 'primary', text: 'on-primary', badge: 'primary-container', badgeText: 'on-primary-container', grd: 'primary-container/40' } : { bg: 'secondary', text: 'on-secondary', badge: 'secondary-container', badgeText: 'on-secondary-container', grd: 'secondary-container/30' };
+                    card.innerHTML = `
+                        <div class="bg-gradient-to-l from-${colors.grd} to-transparent px-lg py-md flex items-center justify-between border-b border-outline-variant/30">
+                            <div class="flex items-center gap-sm">
+                                <div class="w-10 h-10 rounded-xl bg-${colors.bg} flex items-center justify-center shadow">
+                                    <span class="material-symbols-outlined text-${colors.text} text-[20px]">account_balance</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-headline-md font-headline-md text-on-surface leading-tight">${name}</h3>
+                                    <p class="text-xs text-on-surface-variant">${type}</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-xs">
+                                <span class="dept-count bg-${colors.badge} text-${colors.badgeText} px-sm py-xs rounded-full text-label-md font-bold text-xs">٠ قسم</span>
+                                <button onclick="confirmDelete('فرع','${name}')" class="material-symbols-outlined text-outline hover:text-error text-[18px] opacity-0 group-hover:opacity-100 transition-opacity">delete</button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-xs p-md flex-1" id="depts-${name}"></div>
+                        <div class="px-md pb-md">
+                            <button onclick="openAddDept('${name}')" class="w-full flex items-center justify-center gap-xs py-sm border-2 border-dashed border-outline-variant rounded-xl text-label-md text-on-surface-variant hover:border-secondary hover:text-secondary transition-all">
+                                <span class="material-symbols-outlined text-[18px]">add</span>
+                                إضافة قسم
+                            </button>
+                        </div>`;
+                    container.insertBefore(card, container.lastElementChild);
+                    document.getElementById('input-branch-name').value = '';
+                    closeModal('modal-add-branch');
+                }
+
+                // ---- Add Department ----
+                let currentBranch = '';
+                function openAddDept(branchName) {
+                    currentBranch = branchName;
+                    document.getElementById('modal-dept-branch').textContent = branchName;
+                    document.getElementById('input-dept-name').value = '';
+                    document.getElementById('input-dept-capacity').value = '';
+                    document.getElementById('input-dept-enrolled').value = '';
+                    openModal('modal-add-dept');
+                }
+                function addDept() {
+                    const name = document.getElementById('input-dept-name').value.trim();
+                    const cap = document.getElementById('input-dept-capacity').value || '0';
+                    const enr = document.getElementById('input-dept-enrolled').value || '0';
+                    if (!name) { document.getElementById('input-dept-name').focus(); return; }
+                    const container = document.getElementById('depts-' + currentBranch);
+                    if (!container) return;
+                    const pct = cap > 0 ? Math.round((enr / cap) * 100) : 0;
+                    const color = pct >= 90 ? 'error' : pct >= 60 ? 'on-tertiary-container' : 'secondary';
+                    const row = document.createElement('div');
+                    row.className = 'cursor-pointer flex items-center justify-between px-md py-sm bg-background rounded-xl hover:bg-surface-container transition-colors dept-row group/dept';
+                    row.setAttribute('onclick', `openDeptDetails('${name}', ${cap}, ${enr})`);
+                    row.innerHTML = `
+                        <div class="flex items-center gap-sm">
+                            <span class="w-2 h-2 rounded-full bg-${color}"></span>
+                            <span class="text-body-md text-on-surface font-bold">${name}</span>
+                        </div>
+                        <div class="flex items-center gap-sm">
+                            <span class="text-xs text-on-surface-variant bg-surface-container px-sm py-xs rounded-full">${enr} / ${cap}</span>
+                            <button onclick="event.stopPropagation(); this.closest('.dept-row').remove(); updateDeptCount('${currentBranch}')" class="material-symbols-outlined text-[16px] text-outline hover:text-error opacity-0 group-hover/dept:opacity-100 transition-opacity">close</button>
+                        </div>`;
+                    container.appendChild(row);
+                    updateDeptCount(currentBranch);
+                    closeModal('modal-add-dept');
+                }
+                function updateDeptCount(branchName) {
+                    const container = document.getElementById('depts-' + branchName);
+                    if (!container) return;
+                    const count = container.querySelectorAll('.dept-row').length;
+                    const card = container.closest('.branch-card');
+                    if (card) { const badge = card.querySelector('.dept-count'); if (badge) badge.textContent = count + ' قسم'; }
+                }
+
+                // ---- Department Details ----
+                function openDeptDetails(name, cap, enr) {
+                    document.getElementById('details-dept-name').textContent = name;
+                    document.getElementById('details-dept-capacity').value = cap;
+                    document.getElementById('details-dept-enrolled').textContent = enr;
+                    
+                    const list = document.getElementById('details-students-list');
+                    list.innerHTML = '';
+                    for(let i = 1; i <= enr; i++) {
+                        const names = ['أحمد محمد', 'سارة محمود', 'خالد عبدالله', 'نورهان علي', 'عمر حسن', 'فاطمة إبراهيم', 'يوسف مصطفى', 'مريم عادل'];
+                        const studentName = names[i % names.length];
+                        list.innerHTML += `
+                            <div class="flex items-center justify-between p-sm bg-background border border-outline-variant/30 rounded-xl">
+                                <div class="flex items-center gap-sm">
+                                    <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold">
+                                        ${studentName.charAt(0)}
+                                    </div>
+                                    <div>
+                                        <p class="text-body-md font-bold text-on-surface">${studentName}</p>
+                                        <p class="text-xs text-on-surface-variant">رقم قيد: 2024${String(i).padStart(4, '0')}</p>
+                                    </div>
+                                </div>
+                                <span class="bg-surface-container text-on-surface-variant px-sm py-xs rounded text-xs font-bold">${i % 3 === 0 ? 'معلق' : 'مؤكد'}</span>
+                            </div>
+                        `;
+                    }
+                    if(enr === 0) {
+                        list.innerHTML = '<p class="text-body-md text-outline text-center py-md">لا يوجد طلاب مسجلين حالياً.</p>';
+                    }
+                    openModal('modal-dept-details');
+                }
+                
+                function saveDeptCapacity() {
+                    alert('تم حفظ السعة الجديدة للقسم بنجاح!');
+                    closeModal('modal-dept-details');
+                }
+
+                // ---- Delete Confirm ----
+                function confirmDelete(type, name) {
+                    document.getElementById('delete-msg').textContent = `هل تريد حذف ${type}: "${name}"؟ لا يمكن التراجع عن هذا الإجراء.`;
+                    openModal('modal-confirm-delete');
+                }
+            </script>
+        </main>
+    </div>
+</body>
+</html>
