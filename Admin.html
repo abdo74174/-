@@ -45,8 +45,10 @@
 </head>
 
 <body class="bg-background font-body-md text-on-surface">
-    <aside
-        class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col border-l border-outline-variant shadow-lg">
+    <!-- Mobile Sidebar Backdrop -->
+    <div id="sidebar-backdrop" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden transition-opacity" onclick="toggleSidebar()"></div>
+    <aside id="sidebar"
+        class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col border-l border-outline-variant shadow-lg translate-x-full lg:translate-x-0 transition-transform duration-300">
         <div class="p-6 flex flex-col items-center gap-4 border-b border-outline-variant mb-6"><img alt="Logo"
                 class="h-16 w-auto object-contain"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuApBXQuXn7-aJhtKkcM6vEnE_kEQ_a-0bXaZ11hnVyMibb4KWyFMhmB0g7Iwq1XRKoWa24xteOaNbWY-QI0TxpMewcTHvxOHy9pbmU92-iZUVSmlNKbhmgLhTR5xKLEbXSZ_EvLuArQvFQqG5kmXoObEbFJpL8LRbhvdwPq1YE7E2U_oa7V4WUnXThekTBXD5nvBvzTs5dkeOamj3ulb9TTXQ2SP5r--95ryq9EgXgJMqsoE-U9qKfH" />
@@ -65,10 +67,13 @@
                 data-path="register" href="register.html"><span
                     class="material-symbols-outlined">app_registration</span><span>التسجيل</span></a></nav>
     </aside>
-    <div class="pr-72">
+    <div class="lg:pr-72 pr-0 transition-all duration-300">
         <header
-            class="fixed top-0 left-0 right-72 h-16 bg-surface/80 backdrop-blur-xl border-b border-outline-variant z-40 flex items-center justify-between px-md">
+            class="fixed top-0 left-0 right-0 lg:right-72 h-16 bg-surface/80 backdrop-blur-xl border-b border-outline-variant z-40 flex items-center justify-between px-md transition-all duration-300">
             <div class="flex items-center gap-4">
+                <button onclick="toggleSidebar()" class="lg:hidden flex items-center justify-center p-2 -mr-3 rounded-full hover:bg-surface-container transition-colors text-primary">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
                 <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
                         class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span
                     class="text-label-md text-on-surface-variant">مرحباً بك، د. أحمد علي</span>
@@ -507,6 +512,14 @@
             </div>
 
             <script>
+                // ---- Sidebar Toggle ----
+                function toggleSidebar() {
+                    const sidebar = document.getElementById('sidebar');
+                    const backdrop = document.getElementById('sidebar-backdrop');
+                    sidebar.classList.toggle('translate-x-full');
+                    backdrop.classList.toggle('hidden');
+                }
+
                 // ---- Modal helpers ----
                 function openModal(id) {
                     const m = document.getElementById(id);

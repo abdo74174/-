@@ -67,10 +67,20 @@
                     data-path="register" href="register.html">التسجيل</a><a
                     class="text-body-md text-on-surface-variant hover:text-primary transition-colors py-2"
                     data-path="login" href="login.html">دخول</a></nav>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 md:gap-4">
                 <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><span
                         class="material-symbols-outlined text-on-primary text-[20px]">person</span></div>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                </button>
             </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-surface shadow-md border-t border-outline-variant/30 flex-col px-margin-mobile py-4 gap-2 z-40 flex">
+            <a class="py-2 text-primary font-bold border-b-2 border-primary w-fit" href="index.html">الرئيسية</a>
+            <a class="py-2 text-on-surface-variant hover:text-primary transition-colors w-fit" href="register.html">التسجيل</a>
+            <a class="py-2 text-on-surface-variant hover:text-primary transition-colors w-fit" href="login.html">دخول</a>
         </div>
     </header>
     <main class="w-full pt-20">
